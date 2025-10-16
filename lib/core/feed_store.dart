@@ -4,9 +4,11 @@ import '../features/feed/feed_models.dart';
 class FeedStore extends ChangeNotifier {
   final List<FeedItem> _userPosts = <FeedItem>[];
   final Set<String> _likedIds = <String>{};
+  final Set<String> _reportedIds = <String>{};
 
   List<FeedItem> get userPosts => List<FeedItem>.unmodifiable(_userPosts);
   bool isLiked(String id) => _likedIds.contains(id);
+  bool isReported(String id) => _reportedIds.contains(id);
 
   void addPost(FeedItem post) {
     _userPosts.insert(0, post);
@@ -54,6 +56,11 @@ class FeedStore extends ChangeNotifier {
       );
     }
     // For simplicity we don't replace items in the feed repo list; UI will show icon state from store.
+    notifyListeners();
+  }
+
+  void report(String id) {
+    _reportedIds.add(id);
     notifyListeners();
   }
 }

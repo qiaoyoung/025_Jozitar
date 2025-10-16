@@ -13,6 +13,8 @@ class FeedItem {
   final List<String> palette;
   final String createdAt;
   final int likes;
+  final String? authorName;
+  final String? authorAvatar;
 
   FeedItem({
     required this.id,
@@ -29,6 +31,8 @@ class FeedItem {
     required this.palette,
     required this.createdAt,
     required this.likes,
+    this.authorName,
+    this.authorAvatar,
   });
 
   factory FeedItem.fromJson(Map<String, dynamic> json) {
@@ -47,6 +51,8 @@ class FeedItem {
       palette: List<String>.from(json['palette'] as List<dynamic>),
       createdAt: json['createdAt'] as String,
       likes: json['likes'] as int,
+      authorName: json['authorName'] as String?,
+      authorAvatar: json['authorAvatar'] as String?,
     );
   }
 }

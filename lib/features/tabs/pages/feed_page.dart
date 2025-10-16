@@ -76,9 +76,12 @@ class _FeedPageState extends State<FeedPage> {
                           bottom: 8,
                           child: Row(
                             children: [
+                              if (item.authorAvatar != null)
+                                CircleAvatar(radius: 10, backgroundImage: AssetImage(item.authorAvatar!)),
+                              const SizedBox(width: 6),
                               Expanded(
                                 child: Text(
-                                  item.caption,
+                                  item.authorName ?? item.caption,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
