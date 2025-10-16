@@ -1,0 +1,48 @@
+{
+  "page": "profile",
+  "version": 1,
+  "generatedAt": "2025-10-16T00:00:00Z",
+  "user": {
+    "id": "u-001",
+    "handle": "@jozitar",
+    "name": "Jozitar",
+    "avatar": "assets/images/avatars/avatar_1.png",
+    "bio": "用镜头记录世界的温度。",
+    "location": "Shanghai, China",
+    "website": "https://example.com",
+    "stats": {"posts": 120, "followers": 3421, "following": 286}
+  },
+  "cover": "assets/images/profile/cover.png",
+  "highlights": [
+    {"id": "h-1", "title": "旅行", "image": "assets/images/profile/p_1.png"},
+    {"id": "h-2", "title": "街拍", "image": "assets/images/profile/p_2.png"},
+    {"id": "h-3", "title": "人像", "image": "assets/images/profile/p_3.png"}
+  ],
+  "grid": [
+    {"id": "pf-1", "image": "assets/images/profile/p_1.png", "caption": "第一束光"},
+    {"id": "pf-2", "image": "assets/images/profile/p_2.png", "caption": "午后的巷口"},
+    {"id": "pf-3", "image": "assets/images/profile/p_3.png", "caption": "海边的风"},
+    {"id": "pf-4", "image": "assets/images/profile/p_4.png", "caption": "石拱门"},
+    {"id": "pf-5", "image": "assets/images/profile/p_5.png", "caption": "屋檐之下"},
+    {"id": "pf-6", "image": "assets/images/profile/p_6.png", "caption": "黄昏色"},
+    {"id": "pf-7", "image": "assets/images/profile/p_7.png", "caption": "步行街"},
+    {"id": "pf-8", "image": "assets/images/profile/p_8.png", "caption": "光影线"},
+    {"id": "pf-9", "image": "assets/images/profile/p_9.png", "caption": "河岸边"},
+    {"id": "pf-10", "image": "assets/images/profile/p_10.png", "caption": "城市边缘"},
+    {"id": "pf-11", "image": "assets/images/profile/p_11.png", "caption": "绿意"},
+    {"id": "pf-12", "image": "assets/images/profile/p_12.png", "caption": "石板路"},
+    {"id": "pf-13", "image": "assets/images/profile/p_13.png", "caption": "长椅"},
+    {"id": "pf-14", "image": "assets/images/profile/p_14.png", "caption": "栅栏旁"},
+    {"id": "pf-15", "image": "assets/images/profile/p_15.png", "caption": "雨后的城"},
+    {"id": "pf-16", "image": "assets/images/profile/p_16.png", "caption": "山坡上"},
+    {"id": "pf-17", "image": "assets/images/profile/p_17.png", "caption": "桥影"},
+    {"id": "pf-18", "image": "assets/images/profile/p_18.png", "caption": "街角花店"},
+    {"id": "pf-19", "image": "assets/images/profile/p_19.png", "caption": "斑驳墙面"},
+    {"id": "pf-20", "image": "assets/images/profile/p_20.png", "caption": "暮色"},
+    {"id": "pf-21", "image": "assets/images/profile/p_21.png", "caption": "港口"},
+    {"id": "pf-22", "image": "assets/images/profile/p_22.png", "caption": "自然纹理"},
+    {"id": "pf-23", "image": "assets/images/profile/p_23.png", "caption": "城市脉搏"},
+    {"id": "pf-24", "image": "assets/images/profile/p_24.png", "caption": "晨练"}
+  ]
+}
+

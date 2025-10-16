@@ -16,18 +16,27 @@ class HomeTabs extends StatefulWidget {
 class _HomeTabsState extends State<HomeTabs> {
   int _currentIndex = 0;
 
-  static final List<Widget> _pages = <Widget>[
-    const FeedPage(),
-    const ExplorePage(),
-    const PostPage(),
-    const NotificationsPage(),
-    const ProfilePage(),
-  ];
+  Widget _buildPage(int index) {
+    switch (index) {
+      case 0:
+        return const FeedPage();
+      case 1:
+        return const ExplorePage();
+      case 2:
+        return const PostPage();
+      case 3:
+        return const NotificationsPage();
+      case 4:
+        return const ProfilePage();
+      default:
+        return const FeedPage();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_currentIndex],
+      body: _buildPage(_currentIndex),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,

@@ -1,0 +1,38 @@
+{
+  "page": "explore",
+  "version": 1,
+  "generatedAt": "2025-10-16T00:00:00Z",
+  "sections": [
+    {
+      "title": "猜你会喜欢",
+      "layout": "grid",
+      "items": [
+        {"id": "ex-1", "image": "assets/images/explore/ex_1.png", "topic": "portrait", "caption": "面孔的细节"},
+        {"id": "ex-2", "image": "assets/images/explore/ex_2.png", "topic": "landscape", "caption": "远山与风"},
+        {"id": "ex-3", "image": "assets/images/explore/ex_3.png", "topic": "street", "caption": "街角入镜"},
+        {"id": "ex-4", "image": "assets/images/explore/ex_4.png", "topic": "architecture", "caption": "线条的秩序"},
+        {"id": "ex-5", "image": "assets/images/explore/ex_5.png", "topic": "travel", "caption": "在路上"},
+        {"id": "ex-6", "image": "assets/images/explore/ex_6.png", "topic": "food", "caption": "味道的颜色"},
+        {"id": "ex-7", "image": "assets/images/explore/ex_7.png", "topic": "minimal", "caption": "极简与留白"},
+        {"id": "ex-8", "image": "assets/images/explore/ex_8.png", "topic": "black-and-white", "caption": "黑白的情绪"},
+        {"id": "ex-9", "image": "assets/images/explore/ex_9.png", "topic": "macro", "caption": "微观世界"},
+        {"id": "ex-10", "image": "assets/images/explore/ex_10.png", "topic": "animals", "caption": "野性的目光"},
+        {"id": "ex-11", "image": "assets/images/explore/ex_11.png", "topic": "sports", "caption": "速度与汗水"},
+        {"id": "ex-12", "image": "assets/images/explore/ex_12.png", "topic": "aerial", "caption": "从空中看"},
+        {"id": "ex-13", "image": "assets/images/explore/ex_13.png", "topic": "night", "caption": "夜色的温度"},
+        {"id": "ex-14", "image": "assets/images/explore/ex_14.png", "topic": "sunset", "caption": "日落时分"},
+        {"id": "ex-15", "image": "assets/images/explore/ex_15.png", "topic": "mountain", "caption": "山的静默"},
+        {"id": "ex-16", "image": "assets/images/explore/ex_16.png", "topic": "sea", "caption": "海的呼吸"},
+        {"id": "ex-17", "image": "assets/images/explore/ex_17.png", "topic": "forest", "caption": "林间拾光"},
+        {"id": "ex-18", "image": "assets/images/explore/ex_18.png", "topic": "desert", "caption": "沙的流线"},
+        {"id": "ex-19", "image": "assets/images/explore/ex_19.png", "topic": "city", "caption": "城市脉搏"},
+        {"id": "ex-20", "image": "assets/images/explore/ex_20.png", "topic": "rain", "caption": "雨幕之下"},
+        {"id": "ex-21", "image": "assets/images/explore/ex_21.png", "topic": "festival", "caption": "节日光影"},
+        {"id": "ex-22", "image": "assets/images/explore/ex_22.png", "topic": "market", "caption": "集市与人"},
+        {"id": "ex-23", "image": "assets/images/explore/ex_23.png", "topic": "abstract", "caption": "抽象的线条"},
+        {"id": "ex-24", "image": "assets/images/explore/ex_24.png", "topic": "texture", "caption": "触感与纹理"}
+      ]
+    }
+  ]
+}
+

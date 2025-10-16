@@ -1,0 +1,17 @@
+{
+  "page": "post",
+  "version": 1,
+  "generatedAt": "2025-10-16T00:00:00Z",
+  "templates": [
+    {"id": "tpl-1", "title": "风景", "recommendTags": ["landscape", "mountain", "sea", "forest"]},
+    {"id": "tpl-2", "title": "人像", "recommendTags": ["portrait", "bokeh", "street"]},
+    {"id": "tpl-3", "title": "城市", "recommendTags": ["architecture", "night", "neon"]}
+  ],
+  "draftDefaults": {
+    "allowComments": true,
+    "allowSave": true,
+    "location": null,
+    "license": "CC BY-NC 4.0"
+  }
+}
+

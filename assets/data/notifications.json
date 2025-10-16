@@ -1,0 +1,13 @@
+{
+  "page": "notifications",
+  "version": 1,
+  "generatedAt": "2025-10-16T00:00:00Z",
+  "items": [
+    {"id": "n-1001", "type": "like", "avatar": "assets/images/avatars/avatar_1.png", "user": "@miles", "text": "赞了你的作品", "target": "feed-15", "time": "2m"},
+    {"id": "n-1002", "type": "comment", "avatar": "assets/images/avatars/avatar_2.png", "user": "@flora", "text": "评论：色彩太治愈了", "target": "feed-18", "time": "8m"},
+    {"id": "n-1003", "type": "follow", "avatar": "assets/images/avatars/avatar_3.png", "user": "@leo", "text": "关注了你", "target": null, "time": "12m"},
+    {"id": "n-1004", "type": "like", "avatar": "assets/images/avatars/avatar_4.png", "user": "@jasmine", "text": "赞了你的作品", "target": "feed-21", "time": "25m"},
+    {"id": "n-1005", "type": "comment", "avatar": "assets/images/avatars/avatar_5.png", "user": "@toby", "text": "评论：构图很稳！", "target": "feed-12", "time": "45m"}
+  ]
+}
+
