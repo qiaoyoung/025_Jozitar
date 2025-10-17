@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>mapperMediaHealthy</key>
+    <string>HideThroughTinyReference</string>
+    <key>modifyBalancer</key>
+    <string>RotateDominantToast</string>
+    <key>barePainter</key>
+    <string>RegionAlignCore</string>
+    <key>stayTerse</key>
+    <string>CatalogResilientKnown</string>
+</dict>
+</plist>

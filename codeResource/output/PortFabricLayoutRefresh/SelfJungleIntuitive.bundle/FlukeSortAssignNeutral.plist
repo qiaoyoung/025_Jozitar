@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>overThreadedBuilder</key>
+    <string>NearClusterConsumeAssemble</string>
+    <key>oceanHappy</key>
+    <string>ValidateDecodeSnapshotterEmitter</string>
+    <key>viewportMergeReliefOrderly</key>
+    <string>AerialAddPalette</string>
+    <key>uponGridPresenterSpeckled</key>
+    <string>FactoryPineAtomic</string>
+</dict>
+</plist>

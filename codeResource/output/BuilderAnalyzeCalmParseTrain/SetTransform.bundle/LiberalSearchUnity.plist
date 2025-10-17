@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>quietPresenter</key>
+    <string>NavigationBarBasinMinimal</string>
+    <key>mapperCoordinateHarmlessStyler</key>
+    <string>ScalePrimalNear</string>
+    <key>harnessHandler</key>
+    <string>TupleVia</string>
+    <key>seamlessCaptureConductor</key>
+    <string>QueryBannerMaskDecoder</string>
+    <key>peacefulConsolidateDynamic</key>
+    <string>RealSnapshotterIconicHandler</string>
+    <key>assignCool</key>
+    <string>CleanOrchestratorThroughThroughout</string>
+    <key>orchestratorOakenCanyon</key>
+    <string>ShuffleRepaintWith</string>
+</dict>
+</plist>

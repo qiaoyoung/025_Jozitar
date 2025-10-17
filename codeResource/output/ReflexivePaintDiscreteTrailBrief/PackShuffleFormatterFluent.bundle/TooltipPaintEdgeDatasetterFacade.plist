@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>upSolutionStencil</key>
+    <string>VictoriousBySpacer</string>
+    <key>cleverPageInterpreter</key>
+    <string>TowardExtractUnity</string>
+    <key>wreathModal</key>
+    <string>LandscapeHeathRegion</string>
+    <key>classShadowThemeTrue</key>
+    <string>FocusedTextureBasinButton</string>
+    <key>heightTupleSet</key>
+    <string>SetViewModel</string>
+</dict>
+</plist>

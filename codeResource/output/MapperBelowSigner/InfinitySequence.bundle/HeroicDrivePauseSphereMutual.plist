@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>workbenchSetGenerousInteractor</key>
+    <string>OffForOrderOff</string>
+    <key>timelineLoaderGraciousScroll</key>
+    <string>ScheduleCenterMark</string>
+    <key>refinedGenerateLocatorSurface</key>
+    <string>BindLayoutPainterJasper</string>
+    <key>restoreConverter</key>
+    <string>SpiceTextureComposerSkill</string>
+    <key>binderCleverPayload</key>
+    <string>TemplateElmFind</string>
+    <key>presentModel</key>
+    <string>TriumphSolidGrave</string>
+</dict>
+</plist>

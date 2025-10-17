@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>binderEqualHavenNear</key>
+    <string>UpdaterWallTabbar</string>
+    <key>plannerVineBeside</key>
+    <string>AttachViewportLaunch</string>
+    <key>handlerCentralLegacy</key>
+    <string>PassageRestoreCoordinatorUnit</string>
+    <key>yardTransformable</key>
+    <string>ArtfulFindClip</string>
+    <key>handlerSpotNear</key>
+    <string>HideControllerFactory</string>
+    <key>quirkCacheTransformable</key>
+    <string>GraciousFromWorldTexture</string>
+</dict>
+</plist>

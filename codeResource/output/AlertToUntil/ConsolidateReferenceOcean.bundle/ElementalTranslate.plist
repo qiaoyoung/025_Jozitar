@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>attachChatSigner</key>
+    <string>PineImportInsideDashboard</string>
+    <key>resilientViewport</key>
+    <string>BreezySurfOptimize</string>
+    <key>thinPerformDatasetterType</key>
+    <string>PastTreasureParseScrollViewStencil</string>
+</dict>
+</plist>

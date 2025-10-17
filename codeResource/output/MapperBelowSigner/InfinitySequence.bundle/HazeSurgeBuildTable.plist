@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>bindConnectorTrueEngine</key>
+    <string>ControllerCenterResize</string>
+    <key>decompressPlugin</key>
+    <string>SnapshotterHarmonyTransformer</string>
+    <key>textureSpiceWildVisualize</key>
+    <string>SlateComposerDecompressAmid</string>
+    <key>fertileCounterStartBinder</key>
+    <string>LayoutRemoveSaveBlueprint</string>
+</dict>
+</plist>

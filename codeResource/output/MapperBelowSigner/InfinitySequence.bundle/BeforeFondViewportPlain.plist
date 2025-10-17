@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>growingFabric</key>
+    <string>MultiplyThroughToolbarMapper</string>
+    <key>transformZone</key>
+    <string>ConduitFixSplitOutlineHost</string>
+    <key>catalogerResourcePack</key>
+    <string>FacetRegisterGenuineAtlasMap</string>
+</dict>
+</plist>

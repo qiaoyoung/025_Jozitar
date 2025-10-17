@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>scrollYearSpectrumKind</key>
+    <string>FactoryConvertSpeakFresh</string>
+    <key>viewportDropTooltip</key>
+    <string>AlongRendererSurface</string>
+    <key>deliverStableTrendRenderer</key>
+    <string>WindWisdomViewportParser</string>
+    <key>fabricDecompress</key>
+    <string>FragmentColumnRoute</string>
+    <key>transformerString</key>
+    <string>ViaCoordinatorBadge</string>
+    <key>briskSurfaceScheduler</key>
+    <string>LandscapeCleanUntil</string>
+    <key>tameSaverElevate</key>
+    <string>VisitorCardRound</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>objectHappy</key>
+    <string>GridUp</string>
+    <key>idealCataloger</key>
+    <string>ImplementNeuralCore</string>
+    <key>jadePush</key>
+    <string>DeliverEpisodeHelper</string>
+    <key>operandCloseCataloger</key>
+    <string>DecompressPastGlacierCalibrate</string>
+</dict>
+</plist>

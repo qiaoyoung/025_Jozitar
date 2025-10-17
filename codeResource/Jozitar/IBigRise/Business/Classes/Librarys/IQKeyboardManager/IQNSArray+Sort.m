@@ -1,6 +1,8 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IQNSArray+Sort.m
-//  https://github.com/hackiftekhar/IQKeyboardManager
+//  https://github.com/hackiftekhar/EliteFactory
 //  Copyright (c) 2013-24 Iftekhar Qurashi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,52 +23,79 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "IQNSArray+Sort.h"
 #import "IQNSArray+Sort.h"
+//: #import "IQUIView+Hierarchy.h"
 #import "IQUIView+Hierarchy.h"
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
-@implementation NSArray (IQ_NSArray_Sort)
+//: @implementation NSArray (IQ_NSArray_Sort)
+@implementation NSArray (Written)
 
+//: - (NSArray<UIView*>*)sortedArrayByTag
 - (NSArray<UIView*>*)sortedArrayByTag
 {
+    //: return [self sortedArrayUsingComparator:^NSComparisonResult(UIView *view1, UIView *view2) {
     return [self sortedArrayUsingComparator:^NSComparisonResult(UIView *view1, UIView *view2) {
-        
+
+        //: if ([view1 respondsToSelector:@selector(tag)] && [view2 respondsToSelector:@selector(tag)])
         if ([view1 respondsToSelector:@selector(tag)] && [view2 respondsToSelector:@selector(tag)])
         {
-            if ([view1 tag] < [view2 tag])	return NSOrderedAscending;
-            
-            else if ([view1 tag] > [view2 tag])	return NSOrderedDescending;
-            
-            else	return NSOrderedSame;
+            //: if ([view1 tag] < [view2 tag]) return NSOrderedAscending;
+            if ([view1 tag] < [view2 tag]) return NSOrderedAscending;
+
+            //: else if ([view1 tag] > [view2 tag]) return NSOrderedDescending;
+            else if ([view1 tag] > [view2 tag]) return NSOrderedDescending;
+
+            //: else return NSOrderedSame;
+            else return NSOrderedSame;
         }
+        //: else
         else
+            //: return NSOrderedSame;
             return NSOrderedSame;
+    //: }];
     }];
 }
 
+//: - (NSArray<UIView*>*)sortedArrayByPosition
 - (NSArray<UIView*>*)sortedArrayByPosition
 {
+    //: return [self sortedArrayUsingComparator:^NSComparisonResult(UIView *view1, UIView *view2) {
     return [self sortedArrayUsingComparator:^NSComparisonResult(UIView *view1, UIView *view2) {
-        
+
+        //: CGFloat x1 = CGRectGetMinX(view1.frame);
         CGFloat x1 = CGRectGetMinX(view1.frame);
+        //: CGFloat y1 = CGRectGetMinY(view1.frame);
         CGFloat y1 = CGRectGetMinY(view1.frame);
+        //: CGFloat x2 = CGRectGetMinX(view2.frame);
         CGFloat x2 = CGRectGetMinX(view2.frame);
+        //: CGFloat y2 = CGRectGetMinY(view2.frame);
         CGFloat y2 = CGRectGetMinY(view2.frame);
-        
-        if (y1 < y2)  return NSOrderedAscending;
-        
+
+        //: if (y1 < y2) return NSOrderedAscending;
+        if (y1 < y2) return NSOrderedAscending;
+
+        //: else if (y1 > y2) return NSOrderedDescending;
         else if (y1 > y2) return NSOrderedDescending;
-        
+
         //Else both y are same so checking for x positions
-        else if (x1 < x2)  return NSOrderedAscending;
-        
+        //: else if (x1 < x2) return NSOrderedAscending;
+        else if (x1 < x2) return NSOrderedAscending;
+
+        //: else if (x1 > x2) return NSOrderedDescending;
         else if (x1 > x2) return NSOrderedDescending;
-        
-        else    return NSOrderedSame;
+
+        //: else return NSOrderedSame;
+        else return NSOrderedSame;
+    //: }];
     }];
 }
 
 
+//: @end
 @end

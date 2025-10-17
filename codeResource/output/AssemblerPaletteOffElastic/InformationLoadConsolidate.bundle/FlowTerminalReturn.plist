@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>themeModifyRetreatUltimate</key>
+    <string>WorldCycleArmatureFor</string>
+    <key>finishResolver</key>
+    <string>PersistLocatorEnqueue</string>
+    <key>threadedReplaceJungleWarehouse</key>
+    <string>DetectPreloadMakeTangibleCompute</string>
+    <key>datasetterReplaceListThreaded</key>
+    <string>BuilderViewModelHillWithinStore</string>
+    <key>blendFabric</key>
+    <string>ConsoleTransitOriginalUp</string>
+    <key>paintGreatWorkbenchQuill</key>
+    <string>EnableRepaintGeneric</string>
+</dict>
+</plist>

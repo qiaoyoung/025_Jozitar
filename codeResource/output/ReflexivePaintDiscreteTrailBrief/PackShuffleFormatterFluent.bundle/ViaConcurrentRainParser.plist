@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>errorVisitor</key>
+    <string>ShuffleGrowingDominant</string>
+    <key>fromLatticeLushPainter</key>
+    <string>ListenerDisplayCarefreeFacade</string>
+    <key>mightyCollector</key>
+    <string>CreatorGladeUpdateTrainFormatter</string>
+    <key>urbaneCatalogTryCataloger</key>
+    <string>PeacefulTimelineThreadRare</string>
+    <key>coolAfterCycleDelegate</key>
+    <string>AcceptAssetOperatorSave</string>
+    <key>loaderConnector</key>
+    <string>ParameterPainterSageWarm</string>
+</dict>
+</plist>
