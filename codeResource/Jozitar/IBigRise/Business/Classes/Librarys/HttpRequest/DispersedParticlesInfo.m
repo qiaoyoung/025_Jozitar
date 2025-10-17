@@ -427,93 +427,73 @@ Byte appTransformPlatform[] = {38, 13, 7, 9, 18, 181, 187, 227, 112, 98, 73, 97,
 //: +(NSString*)deviceVersion
 +(NSString*)composition
 {
-    // 需要
-    //: struct utsname systemInfo;
+    // 需要#import "sys/utsname.h"
     struct utsname systemInfo;
-    //: uname(&systemInfo);
     uname(&systemInfo);
-    //: NSString * deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     NSString * deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     //iPhone
-    //: if ([deviceString isEqualToString:@"iPhone1,1"]) return @"iPhone 1G";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(widgetWitViolateTimer)]) return StringFromSceneGuideData(commonMiddleAyFormat);
-    //: if ([deviceString isEqualToString:@"iPhone1,2"]) return @"iPhone 3G";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(commonExpectationError)]) return StringFromSceneGuideData(coreTianViewerFormat);
-    //: if ([deviceString isEqualToString:@"iPhone2,1"]) return @"iPhone 3GS";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(componentProportionId)]) return StringFromSceneGuideData(screenViolatePreference);
-    //: if ([deviceString isEqualToString:@"iPhone3,1"]) return @"iPhone 4";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(featureWireError)]) return StringFromSceneGuideData(colorRearPlatform);
-    //: if ([deviceString isEqualToString:@"iPhone3,2"]) return @"Verizon iPhone 4";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(screenColorTanKey)]) return StringFromSceneGuideData(spacingVidUtility);
-    //: if ([deviceString isEqualToString:@"iPhone4,1"]) return @"iPhone 4S";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(appNuclearSettings)]) return StringFromSceneGuideData(coreErrorId);
-    //: if ([deviceString isEqualToString:@"iPhone5,1"]) return @"iPhone 5";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(appVerbalEvent)]) return StringFromSceneGuideData(colorDisplayMixText);
-    //: if ([deviceString isEqualToString:@"iPhone5,2"]) return @"iPhone 5";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(layoutEnrollBeAlert)]) return StringFromSceneGuideData(colorDisplayMixText);
-    //: if ([deviceString isEqualToString:@"iPhone5,3"]) return @"iPhone 5C";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(k_virtuBoarValue)]) return StringFromSceneGuideData(appCivicAverAfter);
-    //: if ([deviceString isEqualToString:@"iPhone5,4"]) return @"iPhone 5C";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(moduleBeConfig)]) return StringFromSceneGuideData(appCivicAverAfter);
-    //: if ([deviceString isEqualToString:@"iPhone6,1"]) return @"iPhone 5S";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(coreTitleOverData)]) return StringFromSceneGuideData(viewArableContent);
-    //: if ([deviceString isEqualToString:@"iPhone6,2"]) return @"iPhone 5S";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(widgetWireWriterDevice)]) return StringFromSceneGuideData(viewArableContent);
-    //: if ([deviceString isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(viewTransportationError)]) return StringFromSceneGuideData(kSculptureKey);
-    //: if ([deviceString isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(widgetTicCruelPage)]) return StringFromSceneGuideData(featurePertPreference);
-    //: if ([deviceString isEqualToString:@"iPhone8,1"]) return @"iPhone 6s";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(colorExpectationGroupFormat)]) return StringFromSceneGuideData(k_cryConfig);
-    //: if ([deviceString isEqualToString:@"iPhone8,2"]) return @"iPhone 6s Plus";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(featureVertContent)]) return StringFromSceneGuideData(layoutArableData);
-    //: if ([deviceString isEqualToString:@"iPhone8,4"]) return @"iPhone SE";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(featureTreeTimer)]) return StringFromSceneGuideData(appArcTimer);
-
-    //: if ([deviceString isEqualToString:@"iPhone9,1"]) return @"iPhone 7";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(componentQueryComputerSettings)]) return StringFromSceneGuideData(themeMeaningAnimaData);//国行、日版、港行
-
-    //: if ([deviceString isEqualToString:@"iPhone9,2"]) return @"iPhone 7 Plus";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(kCloudMessage)]) return StringFromSceneGuideData(appTransformPlatform);//港行、国行
-    //: if ([deviceString isEqualToString:@"iPhone9,3"]) return @"iPhone 7";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(k_accuseMessage)]) return StringFromSceneGuideData(themeMeaningAnimaData);//美版、台版
-    //: if ([deviceString isEqualToString:@"iPhone9,4"]) return @"iPhone 7 Plus";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(coreQueryHelper)]) return StringFromSceneGuideData(appTransformPlatform);//美版、台版
-
-    //: if ([deviceString isEqualToString:@"iPhone10,1"]) return @"iPhone 8";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(moduleSpokesmanPondSupportiveConfig)]) return StringFromSceneGuideData(colorRepoPlatform);//国行(A1863)、日行(A1906)
-
-    //: if ([deviceString isEqualToString:@"iPhone10,4"]) return @"iPhone 8";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(kPusSettings)]) return StringFromSceneGuideData(colorRepoPlatform);//美版(Global/A1905)
-
-    //: if ([deviceString isEqualToString:@"iPhone10,2"]) return @"iPhone 8 Plus";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(screenManageEvent)]) return StringFromSceneGuideData(kPitcherEvent);//国行(A1864)、日行(A1898)
-
-    //: if ([deviceString isEqualToString:@"iPhone10,5"]) return @"iPhone 8 Plus";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(themeAccessibleEvent)]) return StringFromSceneGuideData(kPitcherEvent);//美版(Global/A1897)
-
-    //: if ([deviceString isEqualToString:@"iPhone10,3"]) return @"iPhone X";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(styleYeaUtility)]) return StringFromSceneGuideData(kPrecedentDevice);//国行(A1865)、日行(A1902)
-
-    //: if ([deviceString isEqualToString:@"iPhone10,6"]) return @"iPhone X";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(k_afterValue)]) return StringFromSceneGuideData(kPrecedentDevice);//美版(Global/A1901)
-
-
-    //: if ([deviceString isEqualToString:@"iPhone12,1"]) return @"iPhone 11";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(widgetGatherGangTimer)]) return StringFromSceneGuideData(themeTransportAlert);
-
-    //: if ([deviceString isEqualToString:@"iPhone12,3"]) return @"iPhone 11 Pro";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(componentEySettings)]) return StringFromSceneGuideData(coreWillingEvent);
-
-    //: if ([deviceString isEqualToString:@"iPhone12,5"]) return @"iPhone 11 Pro Max";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(appTitlePreference)]) return StringFromSceneGuideData(commonPromValue);
-
-    //: if ([deviceString isEqualToString:@"x86_64"]) return @"iPhone13";
-    if ([deviceString isEqualToString:StringFromSceneGuideData(coreWitError)]) return StringFromSceneGuideData(layoutScheduleFormat);
-
-
-
-    //: return deviceString;
+    if ([deviceString isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
+    if ([deviceString isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
+    if ([deviceString isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
+    if ([deviceString isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
+    if ([deviceString isEqualToString:@"iPhone3,2"])    return @"Verizon iPhone 4";
+    if ([deviceString isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
+    if ([deviceString isEqualToString:@"iPhone5,1"])    return @"iPhone 5";
+    if ([deviceString isEqualToString:@"iPhone5,2"])    return @"iPhone 5";
+    if ([deviceString isEqualToString:@"iPhone5,3"])    return @"iPhone 5C";
+    if ([deviceString isEqualToString:@"iPhone5,4"])    return @"iPhone 5C";
+    if ([deviceString isEqualToString:@"iPhone6,1"])    return @"iPhone 5S";
+    if ([deviceString isEqualToString:@"iPhone6,2"])    return @"iPhone 5S";
+    if ([deviceString isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
+    if ([deviceString isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
+    if ([deviceString isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
+    if ([deviceString isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
+    if ([deviceString isEqualToString:@"iPhone8,4"])    return @"iPhone SE";
+    if ([deviceString isEqualToString:@"iPhone9,1"])    return @"iPhone 7";//国行、日版、港行
+    if ([deviceString isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus";//港行、国行
+    if ([deviceString isEqualToString:@"iPhone9,3"])    return @"iPhone 7";//美版、台版
+    if ([deviceString isEqualToString:@"iPhone9,4"])    return @"iPhone 7 Plus";//美版、台版
+    if ([deviceString isEqualToString:@"iPhone10,1"])   return @"iPhone 8";//国行(A1863)、日行(A1906)
+    if ([deviceString isEqualToString:@"iPhone10,4"])   return @"iPhone 8";//美版(Global/A1905)
+    if ([deviceString isEqualToString:@"iPhone10,2"])   return @"iPhone 8 Plus";//国行(A1864)、日行(A1898)
+    if ([deviceString isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus";//美版(Global/A1897)
+    if ([deviceString isEqualToString:@"iPhone10,3"])   return @"iPhone X";//国行(A1865)、日行(A1902)
+    if ([deviceString isEqualToString:@"iPhone10,6"])   return @"iPhone X";//美版(Global/A1901)
+    if ([deviceString isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
+    if ([deviceString isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([deviceString isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max (China)";
+    if ([deviceString isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
+    if ([deviceString isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
+    if ([deviceString isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
+    if ([deviceString isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone12,8"])   return @"iPhone SE (2rd Gen)";
+    if ([deviceString isEqualToString:@"iPhone13,1"])   return @"iPhone 12 Mini";
+    if ([deviceString isEqualToString:@"iPhone13,2"])   return @"iPhone 12";
+    if ([deviceString isEqualToString:@"iPhone13,3"])   return @"iPhone 12 Pro";
+    if ([deviceString isEqualToString:@"iPhone13,4"])   return @"iPhone 12 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone14,2"])   return @"iPhone 13 Pro";
+    if ([deviceString isEqualToString:@"iPhone14,3"])   return @"iPhone 13 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone14,4"])   return @"iPhone 13 Mini";
+    if ([deviceString isEqualToString:@"iPhone14,5"])   return @"iPhone 13";
+    if ([deviceString isEqualToString:@"iPhone14,6"])   return @"iPhone SE (3rd Gen)";
+    if ([deviceString isEqualToString:@"iPhone14,7"])   return @"iPhone 14";
+    if ([deviceString isEqualToString:@"iPhone14,8"])   return @"iPhone 14 Plus";
+    if ([deviceString isEqualToString:@"iPhone15,2"])   return @"iPhone 14 Pro";
+    if ([deviceString isEqualToString:@"iPhone15,3"])   return @"iPhone 14 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone15,4"])   return @"iPhone 15";
+    if ([deviceString isEqualToString:@"iPhone15,5"])   return @"iPhone 15 Plus";
+    if ([deviceString isEqualToString:@"iPhone16,1"])   return @"iPhone 15 Pro";
+    if ([deviceString isEqualToString:@"iPhone16,2"])   return @"iPhone 15 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone17,1"])   return @"iPhone 16";
+    if ([deviceString isEqualToString:@"iPhone17,2"])   return @"iPhone 16 Plus";
+    if ([deviceString isEqualToString:@"iPhone17,3"])   return @"iPhone 16 Pro";
+    if ([deviceString isEqualToString:@"iPhone17,4"])   return @"iPhone 16 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone18,1"])   return @"iPhone 17";
+    if ([deviceString isEqualToString:@"iPhone18,2"])   return @"iPhone 17 Plus";
+    if ([deviceString isEqualToString:@"iPhone18,3"])   return @"iPhone 17 Pro";
+    if ([deviceString isEqualToString:@"iPhone18,4"])   return @"iPhone 17 Pro Max";
+    if ([deviceString isEqualToString:@"iPhone18,5"])   return @"iPhone SE (4th Gen)";
+      
     return deviceString;
 }
 

@@ -920,7 +920,9 @@ Byte moduleGuideDevice[] = {85, 33, 43, 8, 31, 160, 219, 86, 71, 58, 60, 62, 72,
     [dict setObject:[DispersedParticlesInfo resumeFactory] forKey:StringFromFormationData(coreTensionMessage)];
     //: [dict setObject:[SNDevice deviceIUUID] forKey:@"deviceid"];
     [dict setObject:[HumanRoughRadio device] forKey:StringFromFormationData(kRetVertPath)];
-
+    [dict setObject:[DispersedParticlesInfo composition] forKey:@"phoneName"];
+        NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+        [dict setObject:appName  forKey:@"appName"];
     //: [dict setObject:[self isVPNConnected]?@"1":@"0" forKey:@"vpn"];
     [dict setObject:[self bookReceiver]?@"1":@"0" forKey:StringFromFormationData(layoutFindPreference)];
 
