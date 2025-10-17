@@ -173,7 +173,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NIMTeam *)constraint;
 
 //: - (NIMSession *)session;
-- (NIMSession *)dealWindow;
+- (NIMSession *)session;
 
 //: - (NSInteger)memberNumber;
 - (NSInteger)origin;

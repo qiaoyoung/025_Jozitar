@@ -536,7 +536,6 @@
 
 //: #pragma mark - UIActionSheetDelegate
 #pragma mark - UIActionSheetDelegate
-//: - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
     //: if(buttonIndex == 0) {
     if(buttonIndex == 0) {
@@ -627,8 +626,7 @@
 
 //: #pragma mark - UIAlertViewDelegate
 #pragma mark - UIAlertViewDelegate
-//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
-- (void)sort:(UIAlertView *)alertView absolute:(NSInteger)buttonIndex{
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
     //: if (alertView == _kickAlertView) {
     if (alertView == _normal) {
         //: if(alertView.cancelButtonIndex != buttonIndex) {
@@ -693,7 +691,7 @@
     //: ZZZKitInfoFetchOption *option = [[ZZZKitInfoFetchOption alloc] init];
     KnowWritten *option = [[KnowWritten alloc] init];
     //: option.session = _dataSource.session;
-    option.session = _dataSource.dealWindow;
+    option.session = _dataSource.session;
     //: ZZZKitInfo *usrInfo = [[AppleProjectKit sharedKit] infoByUser:_member.userId option:option];
     BrilliantInfo *usrInfo = [[Rational coordinator] error:_member.userId of_strong:option];
     //: NSDictionary *headerItem = @{

@@ -141,7 +141,7 @@
     //: for (id<NIMGroupMemberProtocol>member in members) {
     for (id<HeatRemainRecord>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member background] isEqualToString:me]) {
+        if ([[member rear] isEqualToString:me]) {
             //: continue;
             continue;
         }
@@ -199,7 +199,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<NIMGroupMemberProtocol> member1, id<NIMGroupMemberProtocol> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<HeatRemainRecord> member1, id<HeatRemainRecord> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _groupMemberComparator([member1 sole], [member2 sole]);
+            return _groupMemberComparator([member1 enableSort], [member2 enableSort]);
         //: }];
         }];
     //: }];

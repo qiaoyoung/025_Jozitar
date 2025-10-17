@@ -137,7 +137,7 @@
 - (void)bottom:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setNeed:(id<WrittenInfo>)delegate;
+- (void)setDelegate:(id<WrittenInfo>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)todayMostRange;

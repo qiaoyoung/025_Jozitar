@@ -99,13 +99,13 @@
 
 
 //: - (id)sortKey{
-- (id)sole{
+- (id)enableSort{
     //: return [[ZZZSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[MagneticCenter house] snapline:self.info.showName].shortSpelling;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)background{
+- (NSString *)rear{
     //: return self.userId;
     return [self document:self.userId];
 }
@@ -152,7 +152,7 @@
 }
 
 //: - (id)sortKey{
-- (id)sole{
+- (id)enableSort{
     //: return [[ZZZSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
     return [[MagneticCenter house] snapline:self.component].shortSpelling;
 }
@@ -171,7 +171,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)background{
+- (NSString *)rear{
     //: return self.userId;
     return [self emotion:self.userId];
 }
@@ -229,7 +229,7 @@
 @implementation AdvancedInfo
 
 //: - (NSString *)memberId{
-- (NSString *)background{
+- (NSString *)rear{
     //: return self.teamId;
     return self.teamId;
 }
@@ -294,7 +294,7 @@
 }
 
 //: - (id)sortKey{
-- (id)sole{
+- (id)enableSort{
     //: return [[ZZZSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
     return [[MagneticCenter house] snapline:[self component]].shortSpelling;
 }

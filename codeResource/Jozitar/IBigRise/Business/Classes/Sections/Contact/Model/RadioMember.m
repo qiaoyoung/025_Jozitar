@@ -33,7 +33,7 @@ Byte spacingAceError[] = {77, 19, 13, 117, 145, 104, 79, 236, 62, 24, 17, 114, 4
 }
 
 //: - (NSString *)showName{
-- (NSString *)move{
+- (NSString *)component{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -41,13 +41,13 @@ Byte spacingAceError[] = {77, 19, 13, 117, 145, 104, 79, 236, 62, 24, 17, 114, 4
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)fragment{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
 
 //: - (NSString *)userId{
-- (NSString *)aboveMinimum{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -76,7 +76,7 @@ Byte spacingAceError[] = {77, 19, 13, 117, 145, 104, 79, 236, 62, 24, 17, 114, 4
 }
 
 //: - (NSString *)memberId{
-- (NSString *)file{
+- (NSString *)rear{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -100,7 +100,7 @@ Byte spacingAceError[] = {77, 19, 13, 117, 145, 104, 79, 236, 62, 24, 17, 114, 4
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)connectionSource {
+- (NSString *)redPad {
     //: NSString *title = [[NTESSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[WellHandArea deviceCommon] transitionAcross:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -123,7 +123,7 @@ Byte spacingAceError[] = {77, 19, 13, 117, 145, 104, 79, 236, 62, 24, 17, 114, 4
 }
 
 //: - (id)sortKey {
-- (id)clear {
+- (id)enableSort {
     //: return [[NTESSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[WellHandArea deviceCommon] text:self.info.showName].shortSpelling;
 }

@@ -416,9 +416,9 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.iconImageView.image = [UIImage imageNamed:bodyData.angleOfReflectionImg];
+    cell.iconImageView.image = [UIImage imageNamed:bodyData.edge];
     //: cell.titleLabel.text = bodyData.title;
-    cell.titleLabel.text = bodyData.lock;
+    cell.titleLabel.text = bodyData.go;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
     cell.arrowsImageView.hidden = ![bodyData gallery];
 

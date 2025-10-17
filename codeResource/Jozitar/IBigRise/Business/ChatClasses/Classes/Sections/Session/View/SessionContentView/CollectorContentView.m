@@ -102,7 +102,7 @@ Byte spacingSwitchlyText[] = {64, 20, 57, 11, 163, 60, 254, 34, 90, 237, 54, 135
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.sheetArray;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];

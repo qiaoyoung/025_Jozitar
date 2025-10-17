@@ -19,8 +19,7 @@ static char featureOptionMidEvent;
 
 //: @implementation UIAlertView (NTESBlock)
 @implementation UIAlertView (Strength)
-//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-- (void)canFollow:(UIAlertView *)alertView resourceNet:(NSInteger)buttonIndex
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     //: AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
     AlertBlock block = objc_getAssociatedObject(self, &featureOptionMidEvent);

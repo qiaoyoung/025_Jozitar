@@ -471,7 +471,7 @@
     //: if (self.link == nil) {
     if (self.link == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[SGWeakProxy weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.link = [CADisplayLink displayLinkWithTarget:[WonderProxy icon:self] selector:@selector(updateUI)];
+        self.link = [CADisplayLink displayLinkWithTarget:[WonderProxy icon:self] selector:@selector(sequence)];
 	[self setCorrectBlock:_doubleTapBlock];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];

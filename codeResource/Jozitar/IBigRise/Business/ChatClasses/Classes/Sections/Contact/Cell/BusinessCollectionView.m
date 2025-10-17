@@ -239,7 +239,7 @@
     //: [self refreshTitle:member.showName];
     [self excess:member.component];
     //: self.memberId = member.memberId;
-    self.memberId = member.background;
+    self.memberId = member.rear;
     //: NSURL *url = member.avatarUrlString ? [NSURL URLWithString:member.avatarUrlString] : nil;
     NSURL *url = member.emotion ? [NSURL URLWithString:member.emotion] : nil;
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"head_default"] options:SDWebImageRetryFailed];
@@ -251,7 +251,7 @@
     //: [self refreshTitle:member.showName];
     [self excess:member.component];
     //: self.memberId = [member memberId];
-    self.memberId = [member background];
+    self.memberId = [member rear];
     //: ZZZKitInfo *info = [[AppleProjectKit sharedKit] infoByUser:self.memberId option:nil];
     BrilliantInfo *info = [[Rational coordinator] error:self.memberId of_strong:nil];
     //: [self refreshAvatar:info];

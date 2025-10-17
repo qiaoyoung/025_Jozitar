@@ -598,13 +598,13 @@
         //: ZZZTeamCardRowItem *item = [[ZZZTeamCardRowItem alloc] init];
         AwakeRecordItem *item = [[AwakeRecordItem alloc] init];
         //: item.value = dic[@"kTeamHelperValue"];
-        item.value = dic[[[VellicationData sharedInstance] k_tumText]];
+        item.opene = dic[[[VellicationData sharedInstance] k_tumText]];
         //: item.title = dic[@"kTeamHelperText"];
-        item.title = dic[[[VellicationData sharedInstance] featureTrunkSettings]];
+        item.go = dic[[[VellicationData sharedInstance] featureTrunkSettings]];
         //: item.img = dic[@"kTeamHelperImg"];
-        item.img = dic[[[VellicationData sharedInstance] componentRefugeTimer]];
+        item.edge = dic[[[VellicationData sharedInstance] componentRefugeTimer]];
         //: item.selected = (selectValue == [dic[@"kTeamHelperValue"] integerValue]);
-        item.selected = (selectValue == [dic[[[VellicationData sharedInstance] k_tumText]] integerValue]);
+        item.gallery = (selectValue == [dic[[[VellicationData sharedInstance] k_tumText]] integerValue]);
         //: [items addObject:item];
         [items addObject:item];
     }

@@ -19,7 +19,7 @@
 - (NSString *)redPad;
 
 //: - (NSString *)memberId;
-- (NSString *)background;
+- (NSString *)rear;
 
 //: - (NSString *)showName;
 - (NSString *)component;
@@ -31,7 +31,7 @@
 - (UIImage *)underWithImage;
 
 //: - (id)sortKey;
-- (id)sole;
+- (id)enableSort;
 
 //: @end
 @end

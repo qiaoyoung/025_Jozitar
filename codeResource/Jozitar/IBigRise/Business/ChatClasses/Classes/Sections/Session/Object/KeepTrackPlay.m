@@ -93,7 +93,7 @@
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
     //: id<ZZZSessionConfig> sessionConfig = vc.sessionConfig;
-    id<SkipMeth> sessionConfig = vc.sheetArray;
+    id<SkipMeth> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
     //: ZZZInputView *inputView = vc.sessionInputView;
@@ -119,7 +119,7 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setNeed:_interactor];
+    [layout setDelegate:_interactor];
 
     //: _tableAdapter = [[ZZZSessionTableAdapter alloc] init];
     _tableAdapter = [[JointAdapter alloc] init];

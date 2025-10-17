@@ -667,7 +667,7 @@
         //: ZZZKitInfoFetchOption *option = [[ZZZKitInfoFetchOption alloc] init];
         KnowWritten *option = [[KnowWritten alloc] init];
         //: option.session = teamListManager.session;
-        option.session = teamListManager.dealWindow;
+        option.session = teamListManager.session;
         //: ZZZKitInfo *info = [[AppleProjectKit sharedKit] infoByUser:obj.userId option:option];
         BrilliantInfo *info = [[Rational coordinator] error:obj.userId of_strong:option];
 
@@ -1089,38 +1089,38 @@
             BOOL inAllMuteMode = [self share:self.teamListManager].team.inAllMuteMode;
             //: ZZZTeamCardRowItem *teamMute = [[ZZZTeamCardRowItem alloc] init];
             AwakeRecordItem *teamMute = [[AwakeRecordItem alloc] init];
-            //: teamMute.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_mute"];
-            teamMute.title = [TaskWritten division:[ChooseData componentTumDevice]];//@"群禁言".string_localized;
-            //: teamMute.subTitle = [ZZZTeamHelper teamMuteText:inAllMuteMode];
-            teamMute.subTitle = [WeAdvanced paragraph:inAllMuteMode];
+            //: teamMute.go = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_mute"];
+            teamMute.go = [TaskWritten division:[ChooseData componentTumDevice]];//@"群禁言".string_localized;
+            //: teamMute.forbidShared = [ZZZTeamHelper teamMuteText:inAllMuteMode];
+            teamMute.forbidShared = [WeAdvanced paragraph:inAllMuteMode];
 	[self setSentence:_option];
-            //: teamMute.rowHeight = 50.f;
-            teamMute.rowHeight = 50.f;
+            //: teamMute.coat = 50.f;
+            teamMute.coat = 50.f;
             //: teamMute.type = TeamCardRowItemTypeSelected;
-            teamMute.type = TeamCardRowItemTypeSelected;
+            teamMute.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setSentence:_option];
-            //: teamMute.optionItems = [ZZZTeamHelper teamMuteItemsWithSeleced:inAllMuteMode];
-            teamMute.optionItems = [WeAdvanced even:inAllMuteMode];
+            //: teamMute.pick = [ZZZTeamHelper teamMuteItemsWithSeleced:inAllMuteMode];
+            teamMute.pick = [WeAdvanced even:inAllMuteMode];
 	[self setSentence:_option];
-            //: teamMute.actionDisabled = !canEdit;
-            teamMute.actionDisabled = !canEdit;
-            //: teamMute.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-            teamMute.selectedBlock = ^(id<BrilliantEsthetic> item) {
+            //: teamMute.previousDrop = !canEdit;
+            teamMute.previousDrop = !canEdit;
+            //: teamMute.technology = ^(id<NIMKitSelectCardData> item) {
+            teamMute.technology = ^(id<BrilliantEsthetic> item) {
                 //: [_vc didUpdateTeamMute:[item.value integerValue]];
-                [_vc arc:[item.session integerValue]];
+                [_vc arc:[item.opene integerValue]];
             //: };
             };
 	[self setSentence:_option];
-            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:teamMute.title
-            NovelFactoryViewController *vc = [NovelFactoryViewController clean:teamMute.title
-                                                                                   //: items:teamMute.optionItems
-                                                                                   formatFor:teamMute.optionItems
+            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:teamMute.go
+            NovelFactoryViewController *vc = [NovelFactoryViewController clean:teamMute.go
+                                                                                   //: items:teamMute.pick
+                                                                                   formatFor:teamMute.pick
                                                                                   //: result:^(id<NIMKitSelectCardData> _Nonnull item) {
                                                                                   materialization:^(id<BrilliantEsthetic> _Nonnull item) {
-                  //: if (teamMute.selectedBlock) {
-                  if (teamMute.selectedBlock) {
-                      //: teamMute.selectedBlock(item);
-                      teamMute.selectedBlock(item);
+                  //: if (teamMute.technology) {
+                  if (teamMute.technology) {
+                      //: teamMute.technology(item);
+                      teamMute.technology(item);
                   }
               //: }];
               }];
@@ -1142,35 +1142,35 @@
         {
             //: ZZZTeamCardRowItem *teamNotify = [[ZZZTeamCardRowItem alloc] init];
             AwakeRecordItem *teamNotify = [[AwakeRecordItem alloc] init];
-            //: teamNotify.title = [NTESLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
-            teamNotify.title = [TaskWritten division:[ChooseData coreOpeneValue]];//@"消息提醒".string_localized;
-            //: teamNotify.subTitle = [ZZZTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
-            teamNotify.subTitle = [WeAdvanced installmentFit:self.teamListManager.team.notifyStateForNewMsg];
-            //: teamNotify.rowHeight = 50.f;
-            teamNotify.rowHeight = 50.f;
+            //: teamNotify.go = [NTESLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+            teamNotify.go = [TaskWritten division:[ChooseData coreOpeneValue]];//@"消息提醒".string_localized;
+            //: teamNotify.forbidShared = [ZZZTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
+            teamNotify.forbidShared = [WeAdvanced installmentFit:self.teamListManager.team.notifyStateForNewMsg];
+            //: teamNotify.coat = 50.f;
+            teamNotify.coat = 50.f;
 	[self setSentence:_option];
             //: teamNotify.type = TeamCardRowItemTypeSelected;
-            teamNotify.type = TeamCardRowItemTypeSelected;
+            teamNotify.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setSentence:_option];
-            //: teamNotify.optionItems = [ZZZTeamHelper notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
-            teamNotify.optionItems = [WeAdvanced lab:[self share:self.teamListManager].team.notifyStateForNewMsg];
+            //: teamNotify.pick = [ZZZTeamHelper notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
+            teamNotify.pick = [WeAdvanced lab:[self share:self.teamListManager].team.notifyStateForNewMsg];
 	[self setSentence:_option];
-            //: teamNotify.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-            teamNotify.selectedBlock = ^(id<BrilliantEsthetic> item) {
+            //: teamNotify.technology = ^(id<NIMKitSelectCardData> item) {
+            teamNotify.technology = ^(id<BrilliantEsthetic> item) {
                 //: [_vc didUpdateNotifiyState:[item.value integerValue]];
-                [_vc box:[item.session integerValue]];
+                [_vc box:[item.opene integerValue]];
             //: };
             };
-            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:teamNotify.title
-            NovelFactoryViewController *vc = [NovelFactoryViewController clean:teamNotify.title
-                                                                                   //: items:teamNotify.optionItems
-                                                                                   formatFor:teamNotify.optionItems
+            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:teamNotify.go
+            NovelFactoryViewController *vc = [NovelFactoryViewController clean:teamNotify.go
+                                                                                   //: items:teamNotify.pick
+                                                                                   formatFor:teamNotify.pick
                                                                                   //: result:^(id<NIMKitSelectCardData> _Nonnull item) {
                                                                                   materialization:^(id<BrilliantEsthetic> _Nonnull item) {
-                  //: if (teamNotify.selectedBlock) {
-                  if (teamNotify.selectedBlock) {
-                      //: teamNotify.selectedBlock(item);
-                      teamNotify.selectedBlock(item);
+                  //: if (teamNotify.technology) {
+                  if (teamNotify.technology) {
+                      //: teamNotify.technology(item);
+                      teamNotify.technology(item);
                   }
               //: }];
               }];
@@ -1439,7 +1439,7 @@
     //: BOOL isTop = switchview.on;
     BOOL isTop = switchview.on;
     //: NIMSession *session = _teamListManager.session;
-    NIMSession *session = [self share:_teamListManager].dealWindow;
+    NIMSession *session = [self share:_teamListManager].session;
     //: NIMRecentSession *recent = [[NIMSDK sharedSDK].conversationManager recentSessionBySession:session];
     NIMRecentSession *recent = [[NIMSDK sharedSDK].conversationManager recentSessionBySession:session];
     //: if (isTop) {
@@ -1580,7 +1580,7 @@
     //: option.start = 0;
     option.start = 0;
     //: [[NIMSDK sharedSDK].conversationManager deleteMessagesInSession:_teamListManager.session option:option completion:^(NSError * _Nullable error) {
-    [[NIMSDK sharedSDK].conversationManager deleteMessagesInSession:[self response:_teamListManager].dealWindow option:option completion:^(NSError * _Nullable error) {
+    [[NIMSDK sharedSDK].conversationManager deleteMessagesInSession:[self response:_teamListManager].session option:option completion:^(NSError * _Nullable error) {
 
     //: }];
     }];
@@ -1625,34 +1625,34 @@
     BOOL canEdit = [BrilliantProud rear:[self beginByAutomobile:_teamListManager].myTeamInfo];
     //: ZZZTeamCardRowItem *itemAuth = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *itemAuth = [[AwakeRecordItem alloc] init];
-    //: itemAuth.title = [NTESLanguageManager getTextWithKey:@"authentication"];
-    itemAuth.title = [TaskWritten division:[ChooseData screenRetThreatenPage]];//@"身份验证".string_localized;
-    //: itemAuth.subTitle = [ZZZTeamHelper jonModeText:self.teamListManager.team.joinMode];
-    itemAuth.subTitle = [WeAdvanced abstraction:self.teamListManager.team.joinMode];
-    //: itemAuth.actionDisabled = !canEdit;
-    itemAuth.actionDisabled = !canEdit;
-    //: itemAuth.rowHeight = 60.f;
-    itemAuth.rowHeight = 60.f;
+    //: itemAuth.go = [NTESLanguageManager getTextWithKey:@"authentication"];
+    itemAuth.go = [TaskWritten division:[ChooseData screenRetThreatenPage]];//@"身份验证".string_localized;
+    //: itemAuth.forbidShared = [ZZZTeamHelper jonModeText:self.teamListManager.team.joinMode];
+    itemAuth.forbidShared = [WeAdvanced abstraction:self.teamListManager.team.joinMode];
+    //: itemAuth.previousDrop = !canEdit;
+    itemAuth.previousDrop = !canEdit;
+    //: itemAuth.coat = 60.f;
+    itemAuth.coat = 60.f;
     //: itemAuth.type = TeamCardRowItemTypeSelected;
-    itemAuth.type = TeamCardRowItemTypeSelected;
-    //: itemAuth.optionItems = [ZZZTeamHelper joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
-    itemAuth.optionItems = [WeAdvanced regeneration:[self beginByAutomobile:self.teamListManager].team.joinMode];
-    //: itemAuth.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    itemAuth.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    itemAuth.forbidSucceed = TeamCardRowItemTypeSelected;
+    //: itemAuth.pick = [ZZZTeamHelper joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
+    itemAuth.pick = [WeAdvanced regeneration:[self beginByAutomobile:self.teamListManager].team.joinMode];
+    //: itemAuth.technology = ^(id<NIMKitSelectCardData> item) {
+    itemAuth.technology = ^(id<BrilliantEsthetic> item) {
         //: [_vc didupdateTeamJoinMode:[item.value integerValue]];
-        [_vc to:[item.session integerValue]];
+        [_vc to:[item.opene integerValue]];
     //: };
     };
-    //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemAuth.title
-    NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemAuth.title
-                                                                           //: items:itemAuth.optionItems
-                                                                           formatFor:itemAuth.optionItems
+    //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemAuth.go
+    NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemAuth.go
+                                                                           //: items:itemAuth.pick
+                                                                           formatFor:itemAuth.pick
                                                                           //: result:^(id<NIMKitSelectCardData> _Nonnull item) {
                                                                           materialization:^(id<BrilliantEsthetic> _Nonnull item) {
-          //: if (itemAuth.selectedBlock) {
-          if (itemAuth.selectedBlock) {
-              //: itemAuth.selectedBlock(item);
-              itemAuth.selectedBlock(item);
+          //: if (itemAuth.technology) {
+          if (itemAuth.technology) {
+              //: itemAuth.technology(item);
+              itemAuth.technology(item);
           }
       //: }];
       }];
@@ -1924,37 +1924,37 @@
         {
             //: ZZZTeamCardRowItem *itemInvite = [[ZZZTeamCardRowItem alloc] init];
             AwakeRecordItem *itemInvite = [[AwakeRecordItem alloc] init];
-            //: itemInvite.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_invite_permission"];
-            itemInvite.title = [TaskWritten division:[ChooseData screenBraveChunkPath]];//@"邀请他人权限".string_localized;
-            //: itemInvite.subTitle = [ZZZTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
-            itemInvite.subTitle = [WeAdvanced evokeValueMissive:self.teamListManager.team.inviteMode];
-            //: itemInvite.actionDisabled = !canEdit;
-            itemInvite.actionDisabled = !canEdit;
-            //: itemInvite.rowHeight = 60.f;
-            itemInvite.rowHeight = 60.f;
+            //: itemInvite.go = [NTESLanguageManager getTextWithKey:@"activity_group_info_invite_permission"];
+            itemInvite.go = [TaskWritten division:[ChooseData screenBraveChunkPath]];//@"邀请他人权限".string_localized;
+            //: itemInvite.forbidShared = [ZZZTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
+            itemInvite.forbidShared = [WeAdvanced evokeValueMissive:self.teamListManager.team.inviteMode];
+            //: itemInvite.previousDrop = !canEdit;
+            itemInvite.previousDrop = !canEdit;
+            //: itemInvite.coat = 60.f;
+            itemInvite.coat = 60.f;
             //: itemInvite.type = TeamCardRowItemTypeSelected;
-            itemInvite.type = TeamCardRowItemTypeSelected;
+            itemInvite.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setRecentChallenge:_whiteView];
-            //: itemInvite.optionItems = [ZZZTeamHelper InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
-            itemInvite.optionItems = [WeAdvanced factor:self.teamListManager.team.inviteMode];
+            //: itemInvite.pick = [ZZZTeamHelper InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
+            itemInvite.pick = [WeAdvanced factor:self.teamListManager.team.inviteMode];
 	[self setRecentChallenge:_whiteView];
-            //: itemInvite.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-            itemInvite.selectedBlock = ^(id<BrilliantEsthetic> item) {
+            //: itemInvite.technology = ^(id<NIMKitSelectCardData> item) {
+            itemInvite.technology = ^(id<BrilliantEsthetic> item) {
                 //: [_vc didUpdateTeamInviteMode:[item.value integerValue]];
-                [_vc providerOf:[item.session integerValue]];
+                [_vc providerOf:[item.opene integerValue]];
             //: };
             };
 	[self setRecentChallenge:_whiteView];
-            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemInvite.title
-            NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemInvite.title
-                                                                                   //: items:itemInvite.optionItems
-                                                                                   formatFor:itemInvite.optionItems
+            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemInvite.go
+            NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemInvite.go
+                                                                                   //: items:itemInvite.pick
+                                                                                   formatFor:itemInvite.pick
                                                                                   //: result:^(id<NIMKitSelectCardData> _Nonnull item) {
                                                                                   materialization:^(id<BrilliantEsthetic> _Nonnull item) {
-                  //: if (itemInvite.selectedBlock) {
-                  if (itemInvite.selectedBlock) {
-                      //: itemInvite.selectedBlock(item);
-                      itemInvite.selectedBlock(item);
+                  //: if (itemInvite.technology) {
+                  if (itemInvite.technology) {
+                      //: itemInvite.technology(item);
+                      itemInvite.technology(item);
                   }
               //: }];
               }];
@@ -1968,38 +1968,38 @@
         {
             //: ZZZTeamCardRowItem *itemUpdateInfo = [[ZZZTeamCardRowItem alloc] init];
             AwakeRecordItem *itemUpdateInfo = [[AwakeRecordItem alloc] init];
-            //: itemUpdateInfo.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_modify_permission"];
-            itemUpdateInfo.title = [TaskWritten division:[ChooseData widgetCordHelper]];//@"群资料修改权限".string_localized;
-            //: itemUpdateInfo.subTitle = [ZZZTeamHelper updateInfoModeText:self.teamListManager.team.updateInfoMode];
-            itemUpdateInfo.subTitle = [WeAdvanced analyseFill:self.teamListManager.team.updateInfoMode];
+            //: itemUpdateInfo.go = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_modify_permission"];
+            itemUpdateInfo.go = [TaskWritten division:[ChooseData widgetCordHelper]];//@"群资料修改权限".string_localized;
+            //: itemUpdateInfo.forbidShared = [ZZZTeamHelper updateInfoModeText:self.teamListManager.team.updateInfoMode];
+            itemUpdateInfo.forbidShared = [WeAdvanced analyseFill:self.teamListManager.team.updateInfoMode];
 	[self setRecentChallenge:_whiteView];
-            //: itemUpdateInfo.actionDisabled = !canEdit;
-            itemUpdateInfo.actionDisabled = !canEdit;
+            //: itemUpdateInfo.previousDrop = !canEdit;
+            itemUpdateInfo.previousDrop = !canEdit;
 	[self setRecentChallenge:_whiteView];
-            //: itemUpdateInfo.rowHeight = 60.f;
-            itemUpdateInfo.rowHeight = 60.f;
+            //: itemUpdateInfo.coat = 60.f;
+            itemUpdateInfo.coat = 60.f;
             //: itemUpdateInfo.type = TeamCardRowItemTypeSelected;
-            itemUpdateInfo.type = TeamCardRowItemTypeSelected;
-            //: itemUpdateInfo.optionItems = [ZZZTeamHelper updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
-            itemUpdateInfo.optionItems = [WeAdvanced everyDisappearSeleced:self.teamListManager.team.updateInfoMode];
+            itemUpdateInfo.forbidSucceed = TeamCardRowItemTypeSelected;
+            //: itemUpdateInfo.pick = [ZZZTeamHelper updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
+            itemUpdateInfo.pick = [WeAdvanced everyDisappearSeleced:self.teamListManager.team.updateInfoMode];
 	[self setRecentChallenge:_whiteView];
-            //: itemUpdateInfo.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-            itemUpdateInfo.selectedBlock = ^(id<BrilliantEsthetic> item) {
+            //: itemUpdateInfo.technology = ^(id<NIMKitSelectCardData> item) {
+            itemUpdateInfo.technology = ^(id<BrilliantEsthetic> item) {
                 //: [_vc didUpdateTeamInfoMode:[item.value integerValue]];
-                [_vc modifyBlankMode:[item.session integerValue]];
+                [_vc modifyBlankMode:[item.opene integerValue]];
             //: };
             };
 	[self setRecentChallenge:_whiteView];
-            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemUpdateInfo.title
-            NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemUpdateInfo.title
-                                                                                   //: items:itemUpdateInfo.optionItems
-                                                                                   formatFor:itemUpdateInfo.optionItems
+            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemUpdateInfo.go
+            NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemUpdateInfo.go
+                                                                                   //: items:itemUpdateInfo.pick
+                                                                                   formatFor:itemUpdateInfo.pick
                                                                                   //: result:^(id<NIMKitSelectCardData> _Nonnull item) {
                                                                                   materialization:^(id<BrilliantEsthetic> _Nonnull item) {
-                  //: if (itemUpdateInfo.selectedBlock) {
-                  if (itemUpdateInfo.selectedBlock) {
-                      //: itemUpdateInfo.selectedBlock(item);
-                      itemUpdateInfo.selectedBlock(item);
+                  //: if (itemUpdateInfo.technology) {
+                  if (itemUpdateInfo.technology) {
+                      //: itemUpdateInfo.technology(item);
+                      itemUpdateInfo.technology(item);
                   }
               //: }];
               }];
@@ -2014,38 +2014,38 @@
         {
             //: ZZZTeamCardRowItem *itemBeInvite = [[ZZZTeamCardRowItem alloc] init];
             AwakeRecordItem *itemBeInvite = [[AwakeRecordItem alloc] init];
-            //: itemBeInvite.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_invite_verify"];
-            itemBeInvite.title = [TaskWritten division:[ChooseData spacingSprayMessage]];
+            //: itemBeInvite.go = [NTESLanguageManager getTextWithKey:@"activity_group_info_invite_verify"];
+            itemBeInvite.go = [TaskWritten division:[ChooseData spacingSprayMessage]];
 	[self setRecentChallenge:_whiteView];//@"被邀请人身份验证".string_localized;
-            //: itemBeInvite.subTitle = [ZZZTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
-            itemBeInvite.subTitle = [WeAdvanced camera:self.teamListManager.team.beInviteMode];
-            //: itemBeInvite.actionDisabled = !canEdit;
-            itemBeInvite.actionDisabled = !canEdit;
-            //: itemBeInvite.rowHeight = 60.f;
-            itemBeInvite.rowHeight = 60.f;
+            //: itemBeInvite.forbidShared = [ZZZTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
+            itemBeInvite.forbidShared = [WeAdvanced camera:self.teamListManager.team.beInviteMode];
+            //: itemBeInvite.previousDrop = !canEdit;
+            itemBeInvite.previousDrop = !canEdit;
+            //: itemBeInvite.coat = 60.f;
+            itemBeInvite.coat = 60.f;
             //: itemBeInvite.type = TeamCardRowItemTypeSelected;
-            itemBeInvite.type = TeamCardRowItemTypeSelected;
+            itemBeInvite.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setRecentChallenge:_whiteView];
-            //: itemBeInvite.optionItems = [ZZZTeamHelper beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
-            itemBeInvite.optionItems = [WeAdvanced volume:self.teamListManager.team.beInviteMode];
+            //: itemBeInvite.pick = [ZZZTeamHelper beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
+            itemBeInvite.pick = [WeAdvanced volume:self.teamListManager.team.beInviteMode];
 	[self setRecentChallenge:_whiteView];
-            //: itemBeInvite.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-            itemBeInvite.selectedBlock = ^(id<BrilliantEsthetic> item) {
+            //: itemBeInvite.technology = ^(id<NIMKitSelectCardData> item) {
+            itemBeInvite.technology = ^(id<BrilliantEsthetic> item) {
                 //: [_vc didUpdateTeamBeInviteMode:[item.value integerValue]];
-                [_vc until:[item.session integerValue]];
+                [_vc until:[item.opene integerValue]];
             //: };
             };
 	[self setRecentChallenge:_whiteView];
-            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemBeInvite.title
-            NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemBeInvite.title
-                                                                                   //: items:itemBeInvite.optionItems
-                                                                                   formatFor:itemBeInvite.optionItems
+            //: ZZZTeamCardSelectedViewController *vc = [ZZZTeamCardSelectedViewController instanceWithTitle:itemBeInvite.go
+            NovelFactoryViewController *vc = [NovelFactoryViewController clean:itemBeInvite.go
+                                                                                   //: items:itemBeInvite.pick
+                                                                                   formatFor:itemBeInvite.pick
                                                                                   //: result:^(id<NIMKitSelectCardData> _Nonnull item) {
                                                                                   materialization:^(id<BrilliantEsthetic> _Nonnull item) {
-                  //: if (itemBeInvite.selectedBlock) {
-                  if (itemBeInvite.selectedBlock) {
-                      //: itemBeInvite.selectedBlock(item);
-                      itemBeInvite.selectedBlock(item);
+                  //: if (itemBeInvite.technology) {
+                  if (itemBeInvite.technology) {
+                      //: itemBeInvite.technology(item);
+                      itemBeInvite.technology(item);
                   }
               //: }];
               }];

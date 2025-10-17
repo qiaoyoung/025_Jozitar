@@ -16,7 +16,7 @@
 @protocol ProudClip <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)capabilityFlush;
+- (NSString *)redPad;
 //: - (NSString *)memberId;
 - (NSString *)rear;
 //: - (id)sortKey;

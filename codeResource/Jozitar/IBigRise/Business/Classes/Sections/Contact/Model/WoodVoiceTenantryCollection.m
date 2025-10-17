@@ -122,7 +122,7 @@
 //: - (void)removeGroupMember:(id<NTESGroupMemberProtocol>)member{
 - (void)place:(id<ProudClip>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member capabilityFlush];
+    NSString *groupTitle = [member redPad];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_delayGrace indexOfObject:groupTitle];
     //: Pair *pair = [_groups objectAtIndex:groupIndex];
@@ -299,7 +299,7 @@
 - (void)pictureMember:(id<ProudClip>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member capabilityFlush];
+    NSString *groupTitle = [member redPad];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_delayGrace indexOfObject:groupTitle];
     //: Pair *pair = [_groups objectAtIndex:groupIndex];
@@ -341,7 +341,7 @@
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member capabilityFlush];
+        NSString *groupTitle = [member redPad];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {

@@ -857,7 +857,7 @@
 //: #import "ZMONGroupAvatarViewController.h"
 #import "SumerestFactoryViewController.h"
 
-//: @interface ZZZAdvancedTeamCardViewController ()<ZZZTeamMemberListCellActionDelegate,
+//: @interface ZZZAdvancedTeamCardViewController ()<ZZZTeamMemberListCellflashLoadDelegate,
 @interface SnipViewController ()<MatterProud,
 //: NIMContactSelectDelegate,
 FanDelegate,
@@ -1143,7 +1143,7 @@ GradVcdelegate>
         //: ZZZKitInfoFetchOption *option = [[ZZZKitInfoFetchOption alloc] init];
         KnowWritten *option = [[KnowWritten alloc] init];
         //: option.session = self.teamListManager.session;
-        option.session = self.teamListManager.dealWindow;
+        option.session = self.teamListManager.session;
 	[self setGrowing:_groupAlartView];
         //: ZZZKitInfo *info = [[AppleProjectKit sharedKit] infoByUser:obj.userId option:option];
         BrilliantInfo *info = [[Rational coordinator] error:obj.userId of_strong:option];
@@ -1163,7 +1163,7 @@ GradVcdelegate>
     cell.infos = memberInfos;
 }
 
-//: #pragma mark - ZZZTeamMemberListCellActionDelegate
+//: #pragma mark - ZZZTeamMemberListCellflashLoadDelegate
 #pragma mark - MatterProud
 //: - (void)didSelectAddOpeartor{
 - (void)characterWrite{
@@ -1261,7 +1261,7 @@ GradVcdelegate>
             //: options.removeOtherClients = YES;
             options.removeOtherClients = YES;
             //: [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.session options:options completion:^(NSError * _Nullable error) {
-            [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.dealWindow options:options completion:^(NSError * _Nullable error) {
+            [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.session options:options completion:^(NSError * _Nullable error) {
                 //: if (error) {
                 if (error) {
                     //: return;
@@ -1346,7 +1346,7 @@ GradVcdelegate>
     //: NIMContactTeamMemberSelectConfig *config = [[NIMContactTeamMemberSelectConfig alloc] init];
     ConfigStormOperate *config = [[ConfigStormOperate alloc] init];
     //: config.session = self.teamListManager.session;
-    config.session = self.teamListManager.dealWindow;
+    config.session = self.teamListManager.session;
     //: config.teamType = EnumTeamTypeNomal;
     config.teamType = EnumTeamTypeNomal;
 	[self setGrowing:_groupAlartView];
@@ -1539,9 +1539,9 @@ GradVcdelegate>
 //    [self.teamListManager reloadMyTeamInfo];
 //    self.navigationItem.title  = self.teamListManager.team.teamName;
 //    if (self.teamListManager.myTeamInfo.type == NIMTeamMemberTypeOwner) {
-//        UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+//        UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemflashLoad
 //                                                                                    target:self
-//                                                                                    action:@selector(onMore:)];
+//                                                                                    flashLoad:@selector(onMore:)];
 //        self.navigationItem.rightBarButtonItem = buttonItem;
 //        buttonItem.tintColor = [UIColor whiteColor];
 //    } else {
@@ -1549,8 +1549,8 @@ GradVcdelegate>
 //    }
 //}
 
-//: #pragma mark - Actions
-#pragma mark - Actions
+//: #pragma mark - flashLoads
+#pragma mark - flashLoads
 //: - (void)onMore{
 - (void)factoryUser{
     //: __weak typeof(self) weakSelf = self;
@@ -1617,86 +1617,86 @@ GradVcdelegate>
 
 //    AwakeRecordItem *teamMember = [[AwakeRecordItem alloc] init];
 //    teamMember.title  = @"群成员".string_localized;
-//    teamMember.subTitle = [NSString stringWithFormat:@"%ld",self.teamListManager.members.count];
-//    teamMember.rowHeight = 120.f;
-//    teamMember.action = @selector(enterMemberCard);
+//    teamMember.forbidShared = [NSString stringWithFormat:@"%ld",self.teamListManager.members.count];
+//    teamMember.coat = 120.f;
+//    teamMember.flashLoad = @selector(enterMemberCard);
 //    teamMember.type   = TeamCardRowItemTypeTeamMember;
 //    teamMember.img = [UIImage imageNamed:@"ic_group_members"];
 
 //    AwakeRecordItem *teamType = [[AwakeRecordItem alloc] init];
 //    teamType.title = @"群类型".string_localized;
-//    teamType.subTitle = @"高级群".string_localized;
-//    teamType.rowHeight = 50.f;
+//    teamType.forbidShared = @"高级群".string_localized;
+//    teamType.coat = 50.f;
 //    teamType.type   = TeamCardRowItemTypeCommon;
-//    teamType.actionDisabled = YES;
+//    teamType.previousDrop = YES;
 
     //: ZZZTeamCardRowItem *teamName = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamName = [[AwakeRecordItem alloc] init];
     //: teamName.title = [NTESLanguageManager getTextWithKey:@"Group_name"];
-    teamName.title = [TaskWritten division:[ChangingData sharedInstance].spacingWayId];
+    teamName.go = [TaskWritten division:[ChangingData sharedInstance].spacingWayId];
 	[self setAutomatically:_cardview];
-    //: teamName.subTitle = self.teamListManager.team.teamName;
-    teamName.subTitle = self.teamListManager.team.teamName;
+    //: teamName.forbidShared = self.teamListManager.team.teamName;
+    teamName.forbidShared = self.teamListManager.team.teamName;
 	[self setGrowing:_groupAlartView];
-    //: teamName.action = @selector(updateTeamName);
-    teamName.action = @selector(contactLandmark);
+    //: teamName.flashLoad = @selector(updateTeamName);
+    teamName.flashLoad = @selector(contactLandmark);
 	[self setAutomatically:_cardview];
-    //: teamName.rowHeight = 65.f;
-    teamName.rowHeight = 65.f;
+    //: teamName.coat = 65.f;
+    teamName.coat = 65.f;
     //: teamName.type = TeamCardRowItemTypeCommon;
-    teamName.type = TeamCardRowItemTypeCommon;
+    teamName.forbidSucceed = TeamCardRowItemTypeCommon;
 	[self setGrowing:_groupAlartView];
-    //: teamName.actionDisabled = !canEdit;
-    teamName.actionDisabled = !canEdit;
+    //: teamName.previousDrop = !canEdit;
+    teamName.previousDrop = !canEdit;
     //: teamName.img = [UIImage imageNamed:@"ic_group_edit"];
-    teamName.img = [UIImage imageNamed:[ChangingData sharedInstance].layoutTestifyOwingExitHelper];
+    teamName.edge = [UIImage imageNamed:[ChangingData sharedInstance].layoutTestifyOwingExitHelper];
 
 
     //: ZZZTeamCardRowItem *teamNick = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamNick = [[AwakeRecordItem alloc] init];
     //: teamNick.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_nick"];
-    teamNick.title = [TaskWritten division:[ChangingData sharedInstance].k_mootDevice];
+    teamNick.go = [TaskWritten division:[ChangingData sharedInstance].k_mootDevice];
 	[self setAutomatically:_cardview];
-    //: teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
-    teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
+    //: teamNick.forbidShared = self.teamListManager.myTeamInfo.nickname;
+    teamNick.forbidShared = self.teamListManager.myTeamInfo.nickname;
 	[self setGrowing:_groupAlartView];
-    //: teamNick.action = @selector(updateTeamNick);
-    teamNick.action = @selector(stateRequest);
+    //: teamNick.flashLoad = @selector(updateTeamNick);
+    teamNick.flashLoad = @selector(stateRequest);
 	[self setGrowing:_groupAlartView];
-    //: teamNick.rowHeight = 65.f;
-    teamNick.rowHeight = 65.f;
+    //: teamNick.coat = 65.f;
+    teamNick.coat = 65.f;
     //: teamNick.type = TeamCardRowItemTypeCommon;
-    teamNick.type = TeamCardRowItemTypeCommon;
+    teamNick.forbidSucceed = TeamCardRowItemTypeCommon;
 	[self setGrowing:_groupAlartView];
     //: teamNick.img = [UIImage imageNamed:@"ic_group_nick"];
-    teamNick.img = [UIImage imageNamed:[ChangingData sharedInstance].moduleCordUtility];
+    teamNick.edge = [UIImage imageNamed:[ChangingData sharedInstance].moduleCordUtility];
 	[self setAutomatically:_cardview];
 
     //: ZZZTeamCardRowItem *teamIntro = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamIntro = [[AwakeRecordItem alloc] init];
     //: teamIntro.title = [NTESLanguageManager getTextWithKey:@"team_info_set_activity_group_tip"];
-    teamIntro.title = [TaskWritten division:[ChangingData sharedInstance].screenCloudSettings];
-    //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [NTESLanguageManager getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
-    teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [TaskWritten division:[ChangingData sharedInstance].screenGuideConfig] : @"");
-    //: teamIntro.action = @selector(updateTeamIntro);
-    teamIntro.action = @selector(awakeThumb);
+    teamIntro.go = [TaskWritten division:[ChangingData sharedInstance].screenCloudSettings];
+    //: teamIntro.forbidShared = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [NTESLanguageManager getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
+    teamIntro.forbidShared = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [TaskWritten division:[ChangingData sharedInstance].screenGuideConfig] : @"");
+    //: teamIntro.flashLoad = @selector(updateTeamIntro);
+    teamIntro.flashLoad = @selector(awakeThumb);
 	[self setGrowing:_groupAlartView];
-    //: teamIntro.rowHeight = 65.f;
-    teamIntro.rowHeight = 65.f;
+    //: teamIntro.coat = 65.f;
+    teamIntro.coat = 65.f;
 	[self setAutomatically:_cardview];
     //: teamIntro.type = TeamCardRowItemTypeCommon;
-    teamIntro.type = TeamCardRowItemTypeCommon;
-    //: teamIntro.actionDisabled = !canEdit;
-    teamIntro.actionDisabled = !canEdit;
+    teamIntro.forbidSucceed = TeamCardRowItemTypeCommon;
+    //: teamIntro.previousDrop = !canEdit;
+    teamIntro.previousDrop = !canEdit;
 	[self setAutomatically:_cardview];
     //: teamIntro.img = [UIImage imageNamed:@"ic_group_introduction"];
-    teamIntro.img = [UIImage imageNamed:[ChangingData sharedInstance].coreRutError];
+    teamIntro.edge = [UIImage imageNamed:[ChangingData sharedInstance].coreRutError];
 
 //    AwakeRecordItem *teamAnnouncement = [[AwakeRecordItem alloc] init];
 //    teamAnnouncement.title = @"群公告".string_localized;
-//    teamAnnouncement.subTitle = @"点击查看群公告".string_localized;
-//    teamAnnouncement.action = @selector(updateTeamAnnouncement);
-//    teamAnnouncement.rowHeight = 50.f;
+//    teamAnnouncement.forbidShared = @"点击查看群公告".string_localized;
+//    teamAnnouncement.flashLoad = @selector(updateTeamAnnouncement);
+//    teamAnnouncement.coat = 50.f;
 //    teamAnnouncement.type   = TeamCardRowItemTypeCommon;
 //    teamAnnouncement.img = [UIImage imageNamed:@"ic_announcement"];
 
@@ -1705,236 +1705,236 @@ GradVcdelegate>
     //: ZZZTeamCardRowItem *teamMute = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamMute = [[AwakeRecordItem alloc] init];
     //: teamMute.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_mute"];
-    teamMute.title = [TaskWritten division:[ChangingData sharedInstance].commonForwardKey];
+    teamMute.go = [TaskWritten division:[ChangingData sharedInstance].commonForwardKey];
     //: teamMute.switchOn = inAllMuteMode;
-    teamMute.switchOn = inAllMuteMode;
-//    teamMute.subTitle = [WeAdvanced teamMuteText:inAllMuteMode];
-    //: teamMute.rowHeight = 50.f;
-    teamMute.rowHeight = 50.f;
+    teamMute.perigon = inAllMuteMode;
+//    teamMute.forbidShared = [WeAdvanced teamMuteText:inAllMuteMode];
+    //: teamMute.coat = 50.f;
+    teamMute.coat = 50.f;
     //: teamMute.type = TeamCardRowItemTypeSwitch;
-    teamMute.type = TeamCardRowItemTypeSwitch;
+    teamMute.forbidSucceed = TeamCardRowItemTypeSwitch;
     //: teamMute.optionItems = [ZZZTeamHelper teamMuteItemsWithSeleced:inAllMuteMode];
-    teamMute.optionItems = [WeAdvanced even:inAllMuteMode];
-    //: teamMute.actionDisabled = !canEdit;
-    teamMute.actionDisabled = !canEdit;
+    teamMute.pick = [WeAdvanced even:inAllMuteMode];
+    //: teamMute.previousDrop = !canEdit;
+    teamMute.previousDrop = !canEdit;
 	[self setAutomatically:_cardview];
     //: teamMute.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    teamMute.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    teamMute.technology = ^(id<BrilliantEsthetic> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
-        [weakSelf arc:[item.session integerValue]];
+        [weakSelf arc:[item.opene integerValue]];
     //: };
     };
     //: teamMute.identify = EnumTeamCardSwithCellTypeMute;
-    teamMute.identify = EnumTeamCardSwithCellTypeMute;
+    teamMute.time = EnumTeamCardSwithCellTypeMute;
 	[self setGrowing:_groupAlartView];
     //: teamMute.img = [UIImage imageNamed:@"ic_group_all"];
-    teamMute.img = [UIImage imageNamed:[ChangingData sharedInstance].commonWitConfig];
+    teamMute.edge = [UIImage imageNamed:[ChangingData sharedInstance].commonWitConfig];
 
     //: ZZZTeamCardRowItem *teamMuteList = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamMuteList = [[AwakeRecordItem alloc] init];
     //: teamMuteList.title = [NTESLanguageManager getTextWithKey:@"group_mute_member_list_activity_title"];
-    teamMuteList.title = [TaskWritten division:[ChangingData sharedInstance].moduleAccuseValue];
+    teamMuteList.go = [TaskWritten division:[ChangingData sharedInstance].moduleAccuseValue];
 	[self setAutomatically:_cardview];
-    //: teamMuteList.rowHeight = 65.f;
-    teamMuteList.rowHeight = 65.f;
+    //: teamMuteList.coat = 65.f;
+    teamMuteList.coat = 65.f;
 	[self setAutomatically:_cardview];
     //: teamMuteList.type = TeamCardRowItemTypeCommon;
-    teamMuteList.type = TeamCardRowItemTypeCommon;
+    teamMuteList.forbidSucceed = TeamCardRowItemTypeCommon;
 	[self setAutomatically:_cardview];
-    //: teamMuteList.action = @selector(enterMuteList);
-    teamMuteList.action = @selector(byField);
+    //: teamMuteList.flashLoad = @selector(enterMuteList);
+    teamMuteList.flashLoad = @selector(byField);
 	[self setGrowing:_groupAlartView];
     //: teamMuteList.img = [UIImage imageNamed:@"ic_group_lists"];
-    teamMuteList.img = [UIImage imageNamed:[ChangingData sharedInstance].appAccessiblePath];
+    teamMuteList.edge = [UIImage imageNamed:[ChangingData sharedInstance].appAccessiblePath];
 	[self setGrowing:_groupAlartView];
 
     //: ZZZTeamCardRowItem *teamNotify = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamNotify = [[AwakeRecordItem alloc] init];
     //: teamNotify.title = [NTESLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
-    teamNotify.title = [TaskWritten division:[ChangingData sharedInstance].kVirtuSettings];//@"消息提醒".string_localized;
-    //: teamNotify.subTitle = [ZZZTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
-    teamNotify.subTitle = [WeAdvanced installmentFit:self.teamListManager.team.notifyStateForNewMsg];
-    //: teamNotify.rowHeight = 65.f;
-    teamNotify.rowHeight = 65.f;
+    teamNotify.go = [TaskWritten division:[ChangingData sharedInstance].kVirtuSettings];//@"消息提醒".string_localized;
+    //: teamNotify.forbidShared = [ZZZTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
+    teamNotify.forbidShared = [WeAdvanced installmentFit:self.teamListManager.team.notifyStateForNewMsg];
+    //: teamNotify.coat = 65.f;
+    teamNotify.coat = 65.f;
     //: teamNotify.type = TeamCardRowItemTypeSelected;
-    teamNotify.type = TeamCardRowItemTypeSelected;
+    teamNotify.forbidSucceed = TeamCardRowItemTypeSelected;
     //: teamNotify.optionItems = [ZZZTeamHelper notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
-    teamNotify.optionItems = [WeAdvanced lab:self.teamListManager.team.notifyStateForNewMsg];
+    teamNotify.pick = [WeAdvanced lab:self.teamListManager.team.notifyStateForNewMsg];
     //: teamNotify.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    teamNotify.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    teamNotify.technology = ^(id<BrilliantEsthetic> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
-        [weakSelf box:[item.session integerValue]];
+        [weakSelf box:[item.opene integerValue]];
     //: };
     };
     //: teamNotify.img = [UIImage imageNamed:@"ic_group_notice"];
-    teamNotify.img = [UIImage imageNamed:[ChangingData sharedInstance].spacingPondName];
+    teamNotify.edge = [UIImage imageNamed:[ChangingData sharedInstance].spacingPondName];
 
 
     //: ZZZTeamCardRowItem *itemAuth = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *itemAuth = [[AwakeRecordItem alloc] init];
     //: itemAuth.title = [NTESLanguageManager getTextWithKey:@"authentication"];
-    itemAuth.title = [TaskWritten division:[ChangingData sharedInstance].moduleFanArbPlatform];
+    itemAuth.go = [TaskWritten division:[ChangingData sharedInstance].moduleFanArbPlatform];
 	[self setAutomatically:_cardview];
     //: itemAuth.subTitle = [ZZZTeamHelper jonModeText:self.teamListManager.team.joinMode];
-    itemAuth.subTitle = [WeAdvanced abstraction:self.teamListManager.team.joinMode];
+    itemAuth.forbidShared = [WeAdvanced abstraction:self.teamListManager.team.joinMode];
 	[self setGrowing:_groupAlartView];
-    //: itemAuth.actionDisabled = !canEdit;
-    itemAuth.actionDisabled = !canEdit;
-    //: itemAuth.rowHeight = 65.f;
-    itemAuth.rowHeight = 65.f;
+    //: itemAuth.previousDrop = !canEdit;
+    itemAuth.previousDrop = !canEdit;
+    //: itemAuth.coat = 65.f;
+    itemAuth.coat = 65.f;
 	[self setAutomatically:_cardview];
     //: itemAuth.type = TeamCardRowItemTypeSelected;
-    itemAuth.type = TeamCardRowItemTypeSelected;
+    itemAuth.forbidSucceed = TeamCardRowItemTypeSelected;
     //: itemAuth.optionItems = [ZZZTeamHelper joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
-    itemAuth.optionItems = [WeAdvanced regeneration:self.teamListManager.team.joinMode];
+    itemAuth.pick = [WeAdvanced regeneration:self.teamListManager.team.joinMode];
 	[self setAutomatically:_cardview];
     //: itemAuth.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    itemAuth.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    itemAuth.technology = ^(id<BrilliantEsthetic> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
-        [weakSelf to:[item.session integerValue]];
+        [weakSelf to:[item.opene integerValue]];
     //: };
     };
 	[self setGrowing:_groupAlartView];
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
-    itemAuth.img = [UIImage imageNamed:[ChangingData sharedInstance].k_steadyName];
+    itemAuth.edge = [UIImage imageNamed:[ChangingData sharedInstance].k_steadyName];
 
     //: ZZZTeamCardRowItem *itemInvite = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *itemInvite = [[AwakeRecordItem alloc] init];
     //: itemInvite.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_invite_permission"];
-    itemInvite.title = [TaskWritten division:[ChangingData sharedInstance].colorSternUtility];
-    //: itemInvite.subTitle = [ZZZTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
-    itemInvite.subTitle = [WeAdvanced evokeValueMissive:self.teamListManager.team.inviteMode];
+    itemInvite.go = [TaskWritten division:[ChangingData sharedInstance].colorSternUtility];
+    //: itemInvite.forbidShared = [ZZZTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
+    itemInvite.forbidShared = [WeAdvanced evokeValueMissive:self.teamListManager.team.inviteMode];
 	[self setGrowing:_groupAlartView];
-    //: itemInvite.actionDisabled = !canEdit;
-    itemInvite.actionDisabled = !canEdit;
-    //: itemInvite.rowHeight = 65.f;
-    itemInvite.rowHeight = 65.f;
+    //: itemInvite.previousDrop = !canEdit;
+    itemInvite.previousDrop = !canEdit;
+    //: itemInvite.coat = 65.f;
+    itemInvite.coat = 65.f;
 	[self setAutomatically:_cardview];
     //: itemInvite.type = TeamCardRowItemTypeSelected;
-    itemInvite.type = TeamCardRowItemTypeSelected;
+    itemInvite.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setAutomatically:_cardview];
     //: itemInvite.optionItems = [ZZZTeamHelper InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
-    itemInvite.optionItems = [WeAdvanced factor:self.teamListManager.team.inviteMode];
+    itemInvite.pick = [WeAdvanced factor:self.teamListManager.team.inviteMode];
 	[self setAutomatically:_cardview];
     //: itemInvite.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    itemInvite.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    itemInvite.technology = ^(id<BrilliantEsthetic> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
-        [weakSelf providerOf:[item.session integerValue]];
+        [weakSelf providerOf:[item.opene integerValue]];
     //: };
     };
 	[self setGrowing:_groupAlartView];
     //: itemInvite.img = [UIImage imageNamed:@"ic_invite"];
-    itemInvite.img = [UIImage imageNamed:[ChangingData sharedInstance].stylePurchasePath];
+    itemInvite.edge = [UIImage imageNamed:[ChangingData sharedInstance].stylePurchasePath];
 	[self setAutomatically:_cardview];
 
     //: ZZZTeamCardRowItem *itemUpdateInfo = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *itemUpdateInfo = [[AwakeRecordItem alloc] init];
     //: itemUpdateInfo.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_group_modify_permission"];
-    itemUpdateInfo.title = [TaskWritten division:[ChangingData sharedInstance].styleBraveMessage];
+    itemUpdateInfo.go = [TaskWritten division:[ChangingData sharedInstance].styleBraveMessage];
 	[self setAutomatically:_cardview];
-    //: itemUpdateInfo.subTitle = [ZZZTeamHelper updateInfoModeText:self.teamListManager.team.updateInfoMode];
-    itemUpdateInfo.subTitle = [WeAdvanced analyseFill:self.teamListManager.team.updateInfoMode];
-    //: itemUpdateInfo.actionDisabled = !canEdit;
-    itemUpdateInfo.actionDisabled = !canEdit;
+    //: itemUpdateInfo.forbidShared = [ZZZTeamHelper updateInfoModeText:self.teamListManager.team.updateInfoMode];
+    itemUpdateInfo.forbidShared = [WeAdvanced analyseFill:self.teamListManager.team.updateInfoMode];
+    //: itemUpdateInfo.previousDrop = !canEdit;
+    itemUpdateInfo.previousDrop = !canEdit;
 	[self setAutomatically:_cardview];
-    //: itemUpdateInfo.rowHeight = 65.f;
-    itemUpdateInfo.rowHeight = 65.f;
+    //: itemUpdateInfo.coat = 65.f;
+    itemUpdateInfo.coat = 65.f;
 	[self setAutomatically:_cardview];
     //: itemUpdateInfo.type = TeamCardRowItemTypeSelected;
-    itemUpdateInfo.type = TeamCardRowItemTypeSelected;
+    itemUpdateInfo.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setGrowing:_groupAlartView];
     //: itemUpdateInfo.optionItems = [ZZZTeamHelper updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
-    itemUpdateInfo.optionItems = [WeAdvanced everyDisappearSeleced:self.teamListManager.team.updateInfoMode];
+    itemUpdateInfo.pick = [WeAdvanced everyDisappearSeleced:self.teamListManager.team.updateInfoMode];
 	[self setGrowing:_groupAlartView];
     //: itemUpdateInfo.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    itemUpdateInfo.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    itemUpdateInfo.technology = ^(id<BrilliantEsthetic> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
-        [weakSelf modifyBlankMode:[item.session integerValue]];
+        [weakSelf modifyBlankMode:[item.opene integerValue]];
     //: };
     };
 	[self setGrowing:_groupAlartView];
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
-    itemUpdateInfo.img = [UIImage imageNamed:[ChangingData sharedInstance].screenFindEvent];
+    itemUpdateInfo.edge = [UIImage imageNamed:[ChangingData sharedInstance].screenFindEvent];
 
     //: ZZZTeamCardRowItem *itemBeInvite = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *itemBeInvite = [[AwakeRecordItem alloc] init];
     //: itemBeInvite.title = [NTESLanguageManager getTextWithKey:@"activity_group_info_invite_verify"];
-    itemBeInvite.title = [TaskWritten division:[ChangingData sharedInstance].themeColorEvent];
+    itemBeInvite.go = [TaskWritten division:[ChangingData sharedInstance].themeColorEvent];
 	[self setAutomatically:_cardview];
-    //: itemBeInvite.subTitle = [ZZZTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
-    itemBeInvite.subTitle = [WeAdvanced camera:self.teamListManager.team.beInviteMode];
-    //: itemBeInvite.actionDisabled = !canEdit;
-    itemBeInvite.actionDisabled = !canEdit;
-    //: itemBeInvite.rowHeight = 65.f;
-    itemBeInvite.rowHeight = 65.f;
+    //: itemBeInvite.forbidShared = [ZZZTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
+    itemBeInvite.forbidShared = [WeAdvanced camera:self.teamListManager.team.beInviteMode];
+    //: itemBeInvite.previousDrop = !canEdit;
+    itemBeInvite.previousDrop = !canEdit;
+    //: itemBeInvite.coat = 65.f;
+    itemBeInvite.coat = 65.f;
     //: itemBeInvite.type = TeamCardRowItemTypeSelected;
-    itemBeInvite.type = TeamCardRowItemTypeSelected;
+    itemBeInvite.forbidSucceed = TeamCardRowItemTypeSelected;
 	[self setGrowing:_groupAlartView];
     //: itemBeInvite.optionItems = [ZZZTeamHelper beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
-    itemBeInvite.optionItems = [WeAdvanced volume:self.teamListManager.team.beInviteMode];
+    itemBeInvite.pick = [WeAdvanced volume:self.teamListManager.team.beInviteMode];
 	[self setAutomatically:_cardview];
     //: itemBeInvite.selectedBlock = ^(id<NIMKitSelectCardData> item) {
-    itemBeInvite.selectedBlock = ^(id<BrilliantEsthetic> item) {
+    itemBeInvite.technology = ^(id<BrilliantEsthetic> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
-        [weakSelf until:[item.session integerValue]];
+        [weakSelf until:[item.opene integerValue]];
     //: };
     };
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];
-    itemBeInvite.img = [UIImage imageNamed:[ChangingData sharedInstance].styleTumUtility];
+    itemBeInvite.edge = [UIImage imageNamed:[ChangingData sharedInstance].styleTumUtility];
 
     //: ZZZTeamCardRowItem *itemTop = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *itemTop = [[AwakeRecordItem alloc] init];
     //: itemTop.title = [NTESLanguageManager getTextWithKey:@"Chat_settop"];
-    itemTop.title = [TaskWritten division:[ChangingData sharedInstance].viewTensionHelper];
+    itemTop.go = [TaskWritten division:[ChangingData sharedInstance].viewTensionHelper];
 	[self setGrowing:_groupAlartView];
     //: itemTop.switchOn = self.option.isTop;
-    itemTop.switchOn = self.option.isTop;
-    //: itemTop.rowHeight = 50.f;
-    itemTop.rowHeight = 50.f;
+    itemTop.perigon = self.option.isTop;
+    //: itemTop.coat = 50.f;
+    itemTop.coat = 50.f;
 	[self setAutomatically:_cardview];
     //: itemTop.type = TeamCardRowItemTypeSwitch;
-    itemTop.type = TeamCardRowItemTypeSwitch;
+    itemTop.forbidSucceed = TeamCardRowItemTypeSwitch;
     //: itemTop.identify = EnumTeamCardSwithCellTypeTop;
-    itemTop.identify = EnumTeamCardSwithCellTypeTop;
+    itemTop.time = EnumTeamCardSwithCellTypeTop;
     //: itemTop.img = [UIImage imageNamed:@"ic_group_top"];
-    itemTop.img = [UIImage imageNamed:[ChangingData sharedInstance].componentMixHelper];
+    itemTop.edge = [UIImage imageNamed:[ChangingData sharedInstance].componentMixHelper];
 	[self setAutomatically:_cardview];
 
 //        AwakeRecordItem *itemQuit = [[AwakeRecordItem alloc] init];
 //        itemQuit.title = @"退出高级群".string_localized;
-//        itemQuit.action = @selector(quitTeam);
-//        itemQuit.rowHeight = 50.f;
+//        itemQuit.flashLoad = @selector(quitTeam);
+//        itemQuit.coat = 50.f;
 //        itemQuit.type   = TeamCardRowItemTypeRedButton;
 //    itemQuit.img = [UIImage imageNamed:@"ic_announcement"];
 
         //: ZZZTeamCardRowItem *itemDismiss = [[ZZZTeamCardRowItem alloc] init];
         AwakeRecordItem *itemDismiss = [[AwakeRecordItem alloc] init];
         //: itemDismiss.title = [NTESLanguageManager getTextWithKey:@"group_info_activity_jiesan"];
-        itemDismiss.title = [TaskWritten division:[ChangingData sharedInstance].k_listenerSettings];
-        //: itemDismiss.action = @selector(dismissTeam);
-        itemDismiss.action = @selector(handleAdvanced);
-        //: itemDismiss.rowHeight = 50.f;
-        itemDismiss.rowHeight = 50.f;
+        itemDismiss.go = [TaskWritten division:[ChangingData sharedInstance].k_listenerSettings];
+        //: itemDismiss.flashLoad = @selector(dismissTeam);
+        itemDismiss.flashLoad = @selector(handleAdvanced);
+        //: itemDismiss.coat = 50.f;
+        itemDismiss.coat = 50.f;
 	[self setAutomatically:_cardview];
         //: itemDismiss.type = TeamCardRowItemTypeRedButton;
-        itemDismiss.type = TeamCardRowItemTypeRedButton;
+        itemDismiss.forbidSucceed = TeamCardRowItemTypeRedButton;
     //: itemDismiss.img = [UIImage imageNamed:@"ic_announcement"];
-    itemDismiss.img = [UIImage imageNamed:[ChangingData sharedInstance].layoutScheduleTitle];
+    itemDismiss.edge = [UIImage imageNamed:[ChangingData sharedInstance].layoutScheduleTitle];
 
     //: ZZZTeamCardRowItem *teamChange = [[ZZZTeamCardRowItem alloc] init];
     AwakeRecordItem *teamChange = [[AwakeRecordItem alloc] init];
     //: teamChange.title = [NTESLanguageManager getTextWithKey:@"Transfer_group_ownership"];
-    teamChange.title = [TaskWritten division:[ChangingData sharedInstance].commonChangingOwingMessage];
-    //: teamChange.rowHeight = 65.f;
-    teamChange.rowHeight = 65.f;
+    teamChange.go = [TaskWritten division:[ChangingData sharedInstance].commonChangingOwingMessage];
+    //: teamChange.coat = 65.f;
+    teamChange.coat = 65.f;
 	[self setAutomatically:_cardview];
     //: teamChange.type = TeamCardRowItemTypeCommon;
-    teamChange.type = TeamCardRowItemTypeCommon;
-    //: teamChange.action = @selector(onMore);
-    teamChange.action = @selector(factoryUser);
+    teamChange.forbidSucceed = TeamCardRowItemTypeCommon;
+    //: teamChange.flashLoad = @selector(onMore);
+    teamChange.flashLoad = @selector(factoryUser);
 	[self setAutomatically:_cardview];
     //: teamChange.img = [UIImage imageNamed:@"ic_group_transfer"];
-    teamChange.img = [UIImage imageNamed:[ChangingData sharedInstance].widgetFlexPondFreshPage];
+    teamChange.edge = [UIImage imageNamed:[ChangingData sharedInstance].widgetFlexPondFreshPage];
 
 
     //: if (isOwner) {

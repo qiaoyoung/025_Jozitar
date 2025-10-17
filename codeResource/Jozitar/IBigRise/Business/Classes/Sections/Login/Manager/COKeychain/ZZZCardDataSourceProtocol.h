@@ -93,13 +93,13 @@ typedef NS_ENUM(NSInteger, EnumTeamCardRowItemType) {
 @protocol BrilliantEsthetic <NSObject>
 
 //: - (id)value;
-- (id)session;
+- (id)opene;
 
 //: - (NSString *)title;
-- (NSString *)lock;
+- (NSString *)go;
 
 //: - (NSString *)img;
-- (NSString *)angleOfReflectionImg;
+- (NSString *)edge;
 
 //: - (BOOL)selected;
 - (BOOL)gallery;

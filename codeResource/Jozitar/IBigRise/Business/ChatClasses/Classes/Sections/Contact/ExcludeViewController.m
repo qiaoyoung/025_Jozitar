@@ -205,7 +205,7 @@ Byte coreWillDoingtoSettings[] = {92, 31, 88, 10, 200, 176, 63, 38, 27, 177, 246
     //: cell.accessoryBtn.hidden = NO;
     cell.accessoryBtn.hidden = NO;
     //: cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem memberId]];
-    cell.accessoryBtn.selected = [_saveHead containsObject:[contactItem background]];
+    cell.accessoryBtn.selected = [_saveHead containsObject:[contactItem rear]];
     //: [cell refreshItem:contactItem];
     [cell barePrivacy:contactItem];
     //: return cell;
@@ -332,7 +332,7 @@ Byte coreWillDoingtoSettings[] = {92, 31, 88, 10, 200, 176, 63, 38, 27, 177, 246
 - (IBAction)dones:(id)sender {
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.forbid) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];
@@ -697,7 +697,7 @@ Byte coreWillDoingtoSettings[] = {92, 31, 88, 10, 200, 176, 63, 38, 27, 177, 246
     id<HeatRemainRecord> member = arr[indexPath.row];
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
-    NSString *memberId = [(id<HeatRemainRecord>)member background];
+    NSString *memberId = [(id<HeatRemainRecord>)member rear];
     //: ZZZContactDataCell *cell = (ZZZContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     BusinessCollectionView *cell = (BusinessCollectionView *)[tableView cellForRowAtIndexPath:indexPath];
     //: ZZZKitInfo *info;

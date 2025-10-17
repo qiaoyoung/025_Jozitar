@@ -225,7 +225,7 @@
  *  会话页详细配置
  */
 //: - (id<ZZZSessionConfig>)sessionConfig;
-- (id<SkipMeth>)sheetArray;
+- (id<SkipMeth>)sessionConfig;
 
 /**
  *  插入多条消息

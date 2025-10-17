@@ -708,11 +708,11 @@ typedef struct {
 	[self setAbsenteeRate:_lastVisibleIndexPathBeforeRotation];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(sessionBackgroundImage)] && [self.sessionConfig sessionBackgroundImage]) {
-    if ([self.sheetArray respondsToSelector:@selector(oneCrop)] && [self.sheetArray oneCrop]) {
+    if ([self.sessionConfig respondsToSelector:@selector(oneCrop)] && [self.sessionConfig oneCrop]) {
         //: UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
         UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
         //: imgView.image = [self.sessionConfig sessionBackgroundImage];
-        imgView.image = [self.sheetArray oneCrop];
+        imgView.image = [self.sessionConfig oneCrop];
         //: imgView.contentMode = UIViewContentModeScaleAspectFill;
         imgView.contentMode = UIViewContentModeScaleAspectFill;
 	[self setChild:_badgeView];
@@ -814,16 +814,16 @@ typedef struct {
     self.messageForMenu = nil;
 	[self setExit:_tableView];
     //: [self.interactor setReferenceMessage:nil];
-    [self.interactor setKey:nil];
+    [self.interactor setReferenceMessage:nil];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
-    if ([self.sheetArray respondsToSelector:@selector(erectBig)])
+    if ([self.sessionConfig respondsToSelector:@selector(erectBig)])
     {
         //: if ([self.sessionConfig clearThreadMessageAfterSent])
-        if ([self.sheetArray erectBig])
+        if ([self.sessionConfig erectBig])
         {
             //: [self.sessionConfig cleanThreadMessage];
-            [self.sheetArray reading];
+            [self.sessionConfig reading];
         }
     }
 }
@@ -926,10 +926,10 @@ typedef struct {
     //: BOOL disable = NO;
     BOOL disable = NO;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
-    if ([self.sheetArray respondsToSelector:@selector(relevancyBig)])
+    if ([self.sessionConfig respondsToSelector:@selector(relevancyBig)])
     {
         //: disable = [self.sessionConfig disableAudioPlayedStatusIcon];
-        disable = [self.sheetArray relevancyBig];
+        disable = [self.sessionConfig relevancyBig];
 	[self setVocalismBtn:_canTapVoiceBtn];
     }
     //: return disable;
@@ -946,7 +946,7 @@ typedef struct {
 }
 
 //: - (void)onTapMenuItemCopy:(ZZZMediaItem *)item
-- (void)prixFixeShadowPriority:(DramItem *)item
+- (void)onTapMenuItemCopy:(DramItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1022,7 +1022,7 @@ typedef struct {
     _messageForMenu = message;
 	[self setLandmarkView:_sessionInputView];
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setKey:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -1268,9 +1268,9 @@ typedef struct {
     //: BOOL needProximityMonitor = YES;
     BOOL needProximityMonitor = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
-    if ([self.sheetArray respondsToSelector:@selector(applicationVersionSuggest)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(applicationVersionSuggest)]) {
         //: needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
-        needProximityMonitor = !self.sheetArray.applicationVersionSuggest;
+        needProximityMonitor = !self.sessionConfig.applicationVersionSuggest;
 	[self setLandmarkView:_sessionInputView];
     }
     //: return needProximityMonitor;
@@ -1664,9 +1664,9 @@ typedef struct {
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
-    if ([self.sheetArray respondsToSelector:@selector(coverBetween)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(coverBetween)]) {
         //: should = ![self.sessionConfig disableReceiveNewMessages];
-        should = ![self.sheetArray coverBetween];
+        should = ![self.sessionConfig coverBetween];
 	[self setChild:_badgeView];
     }
     //: return should;
@@ -1696,16 +1696,16 @@ typedef struct {
     //: NSArray *items;
     NSArray *items;
     //: if (!self.sessionConfig)
-    if (!self.sheetArray)
+    if (!self.sessionConfig)
     {
         //: items = [[AppleProjectKit sharedKit].config defaultMenuItemsWithMessage:message];
         items = [[Rational coordinator].config voice:message];
     }
     //: else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
-    else if([self.sheetArray respondsToSelector:@selector(itemsWithHeliogramMenu:)])
+    else if([self.sessionConfig respondsToSelector:@selector(itemsWithHeliogramMenu:)])
     {
         //: items = [self.sessionConfig menuItemsWithMessage:message];
-        items = [self.sheetArray itemsWithHeliogramMenu:message];
+        items = [self.sessionConfig itemsWithHeliogramMenu:message];
 	[self setChild:_badgeView];
     }
 
@@ -1764,7 +1764,7 @@ typedef struct {
     _messageForMenu = message;
 	[self setChild:_badgeView];
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setKey:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -2134,9 +2134,9 @@ typedef struct {
     //: NIMAudioType type = NIMAudioTypeAAC;
     NIMAudioType type = NIMAudioTypeAAC;
     //: if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
-    if ([self.sheetArray respondsToSelector:@selector(keyNo)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(keyNo)]) {
         //: type = [self.sessionConfig recordType];
-        type = [self.sheetArray keyNo];
+        type = [self.sessionConfig keyNo];
 	[self setMenu:_subtitle];
     }
     //: return type;
@@ -2358,9 +2358,9 @@ typedef struct {
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
-    if ([self.sheetArray respondsToSelector:@selector(deviceAddress)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(deviceAddress)]) {
         //: should = ![self.sessionConfig disableInputView];
-        should = ![self.sheetArray deviceAddress];
+        should = ![self.sessionConfig deviceAddress];
 	[self setMenu:_subtitle];
     }
     //: return should;
@@ -2422,7 +2422,7 @@ typedef struct {
     if ([self exist])
     {
         //: self.sessionInputView = [[ZZZInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
-        self.sessionInputView = [[VasView alloc] initWithNowConditionFit:CGRectMake(0, 0, self.view.device_width,0) available:self.sheetArray];
+        self.sessionInputView = [[VasView alloc] initWithNowConditionFit:CGRectMake(0, 0, self.view.device_width,0) available:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         [self pair:self.sessionInputView].autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
 	[self setVocalismBtn:_canTapVoiceBtn];
@@ -2608,7 +2608,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setKey:message];
+    [self.interactor setReferenceMessage:message];
 
     //: handle = [self shouldShowMenuByMessage:message];
     handle = [self position:message];
@@ -2710,7 +2710,7 @@ typedef struct {
 //: #pragma mark - 配置项
 #pragma mark - 配置项
 //: - (id<ZZZSessionConfig>)sessionConfig
-- (id<SkipMeth>)sheetArray
+- (id<SkipMeth>)sessionConfig
 {
     //: return nil; 
     return nil; //使用默认配置

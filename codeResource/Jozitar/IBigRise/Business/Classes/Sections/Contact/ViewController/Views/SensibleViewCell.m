@@ -173,7 +173,7 @@
     self.titleLabel.text = member.component;
 	[self setCustomGreen:_messageBtn];
     //: self.memberId = [member memberId];
-    self.memberId = [member background];
+    self.memberId = [member rear];
     //: ZZZKitInfo *info = [[AppleProjectKit sharedKit] infoByUser:self.memberId option:nil];
     BrilliantInfo *info = [[Rational coordinator] error:self.memberId of_strong:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, EnumtSessionState) {
 - (void)setSectionState:(EnumtSessionState)sessionState;
 
 //: - (void)setReferenceMessage:(NIMMessage *)message;
-- (void)setKey:(NIMMessage *)message;
+- (void)setReferenceMessage:(NIMMessage *)message;
 
 //: @end
 @end
