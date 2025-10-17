@@ -258,7 +258,7 @@ typedef struct {
 //: - (void)leftButtonClicked:(id)sender{
 - (void)pirateFlag:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = errAccessible(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == receiverClass) && [self.delegate respondsToSelector:@selector(representationNeed)]) {
         //: [self.delegate dismissDataPickerView];
@@ -282,7 +282,7 @@ typedef struct {
 //: - (void)rightButtonClicked:(id)sender{
 - (void)estateChannel:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = errAccessible(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == receiverClass) && [self.delegate respondsToSelector:@selector(representationNeed)]) {
         //: [self.delegate dismissDataPickerView];
@@ -441,7 +441,7 @@ typedef struct {
     //: self.delegate = delegate;
     self.delegate = delegate;
     //: delegateClass = object_getClass(delegate);
-    receiverClass = errAccessible(delegate);
+    receiverClass = object_getClass(delegate);
 	[self setCathodeRayTube:_bgView];
 }
 

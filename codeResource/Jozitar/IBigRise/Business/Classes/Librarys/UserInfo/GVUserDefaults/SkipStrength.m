@@ -143,7 +143,7 @@ enum TypeEncodings {
     //: Double = 'd',
     Double = 'd',
     //: Object = '@'
-    Object = '@'
+    Object1 = '@'
 //: };
 };
 
@@ -282,7 +282,7 @@ enum TypeEncodings {
                 break;
 
             //: case Object:
-            case Object:
+            case Object1:
                 //: getterImp = (IMP)objectGetter;
                 getterImp = (IMP)writtenObject;
                 //: setterImp = (IMP)objectSetter;

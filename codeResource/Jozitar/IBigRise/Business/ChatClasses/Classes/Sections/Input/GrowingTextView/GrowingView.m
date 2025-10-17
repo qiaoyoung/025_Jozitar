@@ -131,7 +131,7 @@
         SlideScrollView *textView = [[SlideScrollView alloc] initWithFrame:rect];
         //: self.textView = textView;
         self.textView = textView;
-	[self setThatMultiple:self.textStorage];
+//	[self setThatMultiple:self.textStorage];
         //: self.previousFrame = frame;
         self.previousFrame = frame;
 	[self setFollowRange:self.selectedRange];
@@ -246,7 +246,7 @@
     if (minNumberOfLines <= 0) {
         //: self.minHeight = 0;
         self.minHeight = 0;
-	[self setThatMultiple:self.textStorage];
+//	[self setThatMultiple:self.textStorage];
         //: return;
         return;
     }
@@ -422,7 +422,7 @@
 	[self setAlignment:self.textAlignment];
     //: self.textView.scrollEnabled = NO;
     self.textView.scrollEnabled = NO;
-	[self setThatMultiple:self.textStorage];
+//	[self setThatMultiple:self.textStorage];
     //: self.textView.font = [UIFont systemFontOfSize:16];
     self.textView.font = [UIFont systemFontOfSize:16];
     //: self.textView.backgroundColor = [UIColor clearColor];
@@ -439,7 +439,7 @@
     [self.textView setScrollEnabled:YES];
     //: self.textView.userInteractionEnabled = YES;
     self.textView.userInteractionEnabled = YES;
-	[self setThatMultiple:self.textStorage];
+//	[self setThatMultiple:self.textStorage];
     //: self.textView.showsVerticalScrollIndicator = YES;
     self.textView.showsVerticalScrollIndicator = YES;
 }
@@ -543,7 +543,7 @@
         SlideScrollView *textView = [[SlideScrollView alloc] initWithFrame:CGRectZero];
         //: self.textView = textView;
         self.textView = textView;
-	[self setThatMultiple:self.textStorage];
+//	[self setThatMultiple:self.textStorage];
         //: self.previousFrame = CGRectZero;
         self.previousFrame = CGRectZero;
 	[self setHide:_previousFrame];
@@ -826,7 +826,7 @@ static const char *commonQuitUtility (NSString *value) {
 
 - (void)setFollowRange:(NSRange)followRange {
     //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, commonQuitUtility(nil), followRange, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, commonQuitUtility(nil), [NSValue valueWithRange:followRange], OBJC_ASSOCIATION_RETAIN);
 }
 
 //: - (void)setLinkTextAttributes:(NSDictionary<NSString *,id> *)linkTextAttributes
@@ -855,7 +855,8 @@ static const char *commonQuitUtility (NSString *value) {
 
 - (NSRange)followRange {
     //: OC_CUSTOM_PROPERTY_INJECT
-    NSRange followRange = objc_getAssociatedObject(self, commonQuitUtility(nil));
+    NSValue *value = objc_getAssociatedObject(self, commonQuitUtility(nil));
+    NSRange followRange = value.rangeValue;
     return followRange;
 }
 

@@ -138,7 +138,7 @@ Byte viewVidAssAlert[] = {56, 7, 3, 11, 88, 46, 100, 3, 88, 230, 118, 32, 66, 64
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setMenuModel:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: FFDropDownMenuModel *realMenuModel = (FFDropDownMenuModel *)menuModel;
     MagicMarkerBasedModel *realMenuModel = (MagicMarkerBasedModel *)menuModel;

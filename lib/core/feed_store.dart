@@ -5,55 +5,28 @@ class FeedStore extends ChangeNotifier {
   final List<FeedItem> _userPosts = <FeedItem>[];
   final Set<String> _likedIds = <String>{};
   final Set<String> _reportedIds = <String>{};
+  final Map<String, int> _baseLikes = <String, int>{};
 
   List<FeedItem> get userPosts => List<FeedItem>.unmodifiable(_userPosts);
   bool isLiked(String id) => _likedIds.contains(id);
   bool isReported(String id) => _reportedIds.contains(id);
+  int getDisplayLikes(String id, int fallbackBase) {
+    final int base = _baseLikes[id] ?? fallbackBase;
+    return base + (_likedIds.contains(id) ? 1 : 0);
+  }
 
   void addPost(FeedItem post) {
     _userPosts.insert(0, post);
+    _baseLikes[post.id] = post.likes;
     notifyListeners();
   }
 
   void toggleLike(FeedItem item) {
+    _baseLikes.putIfAbsent(item.id, () => item.likes);
     if (_likedIds.contains(item.id)) {
       _likedIds.remove(item.id);
-      if (item.likes > 0) {
-        item = FeedItem(
-          id: item.id,
-          localImage: item.localImage,
-          remoteImage: item.remoteImage,
-          width: item.width,
-          height: item.height,
-          ratio: item.ratio,
-          photographer: item.photographer,
-          location: item.location,
-          caption: item.caption,
-          description: item.description,
-          tags: item.tags,
-          palette: item.palette,
-          createdAt: item.createdAt,
-          likes: item.likes - 1,
-        );
-      }
     } else {
       _likedIds.add(item.id);
-      item = FeedItem(
-        id: item.id,
-        localImage: item.localImage,
-        remoteImage: item.remoteImage,
-        width: item.width,
-        height: item.height,
-        ratio: item.ratio,
-        photographer: item.photographer,
-        location: item.location,
-        caption: item.caption,
-        description: item.description,
-        tags: item.tags,
-        palette: item.palette,
-        createdAt: item.createdAt,
-        likes: item.likes + 1,
-      );
     }
     // For simplicity we don't replace items in the feed repo list; UI will show icon state from store.
     notifyListeners();

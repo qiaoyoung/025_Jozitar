@@ -503,7 +503,6 @@
 		B14653872DC0B4E300C4D5B8 /* AdvancedConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedConfig.m; sourceTree = "<group>"; };
 		B14653882DC0B4E300C4D5B8 /* AwakeBrilliant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwakeBrilliant.h; sourceTree = "<group>"; };
 		B14653892DC0B4E300C4D5B8 /* AwakeBrilliant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwakeBrilliant.m; sourceTree = "<group>"; };
-		B146538A2DC0B4E300C4D5B8 /* ZZZKitDependency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZZKitDependency.h; sourceTree = "<group>"; };
 		B146538B2DC0B4E300C4D5B8 /* WindstormFan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindstormFan.h; sourceTree = "<group>"; };
 		B146538C2DC0B4E300C4D5B8 /* WindstormFan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindstormFan.m; sourceTree = "<group>"; };
 		B146538D2DC0B4E300C4D5B8 /* SkipEffectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkipEffectView.h; sourceTree = "<group>"; };
@@ -1418,7 +1417,6 @@
 				B14653872DC0B4E300C4D5B8 /* AdvancedConfig.m */,
 				B14653882DC0B4E300C4D5B8 /* AwakeBrilliant.h */,
 				B14653892DC0B4E300C4D5B8 /* AwakeBrilliant.m */,
-				B146538A2DC0B4E300C4D5B8 /* ZZZKitDependency.h */,
 				B146538B2DC0B4E300C4D5B8 /* WindstormFan.h */,
 				B146538C2DC0B4E300C4D5B8 /* WindstormFan.m */,
 				B146538D2DC0B4E300C4D5B8 /* SkipEffectView.h */,

@@ -157,9 +157,9 @@ typedef struct {
     CGRect imageRect = CGRectMake(0,0, image.size.width* image.scale, image.size.height* image.scale);
 
     //: int width = imageRect.size.width;
-    int width = imageRect.state.width;
+    int width = imageRect.size.width;
     //: int height = imageRect.size.height;
-    int height = imageRect.state.height;
+    int height = imageRect.size.height;
 
     // the pixels will be painted to this array
     //: uint32_t *pixels = (uint32_t*) malloc(width * height *sizeof(uint32_t));

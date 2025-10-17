@@ -23,7 +23,7 @@ IB_DESIGNABLE
 //: @property (nonatomic, readonly) UILabel *textLabel; 
 @property (nonatomic, readonly) UILabel *textLabel;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *blurEffect
+@property (nonatomic) UIBlurEffect *blurEffect;
 //: @property (nonatomic) IBInspectable BOOL showsText; 
 @property (nonatomic) IBInspectable BOOL compositionPause;
 //: @property (nonatomic) IBInspectable CGFloat progress;

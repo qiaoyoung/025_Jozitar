@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "ZZZKitDependency.h"
-#import "ZZZKitDependency.h"
+//: #import "BrandBeggarMyNeighborPolicyRecordNameView.h"
+#import "BrandBeggarMyNeighborPolicyRecordNameView.h"
 
 //: @interface ZZZAvatarImageView : UIControl
 @interface ProposedControl : UIControl

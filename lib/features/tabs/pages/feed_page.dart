@@ -65,33 +65,57 @@ class _FeedPageState extends State<FeedPage> {
                         Image.asset(
                           item.localImage,
                           fit: BoxFit.cover,
-                          errorBuilder: (context, error, stack) => const ColoredBox(
-                            color: Colors.black12,
-                            child: Center(child: Icon(Icons.broken_image_outlined)),
+                          errorBuilder: (context, error, stack) => Image.network(
+                            item.remoteImage,
+                            fit: BoxFit.cover,
+                            errorBuilder: (context, error, stack) => const ColoredBox(
+                              color: Colors.black12,
+                              child: Center(child: Icon(Icons.broken_image_outlined)),
+                            ),
                           ),
                         ),
                         Positioned(
                           left: 8,
                           right: 8,
                           bottom: 8,
-                          child: Row(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisSize: MainAxisSize.min,
                             children: [
-                              if (item.authorAvatar != null)
-                                CircleAvatar(radius: 10, backgroundImage: AssetImage(item.authorAvatar!)),
-                              const SizedBox(width: 6),
-                              Expanded(
-                                child: Text(
-                                  item.authorName ?? item.caption,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w600,
-                                    shadows: [Shadow(color: Colors.black54, blurRadius: 4)],
+                              if ((item.focalLength != null) || (item.aperture != null))
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 4),
+                                  child: Text(
+                                    [if (item.focalLength != null) item.focalLength!, if (item.aperture != null) item.aperture!].join(' · '),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 11,
+                                      shadows: [Shadow(color: Colors.black45, blurRadius: 4)],
+                                    ),
                                   ),
                                 ),
+                              Row(
+                                children: [
+                                  if (item.authorAvatar != null)
+                                    CircleAvatar(radius: 10, backgroundImage: AssetImage(item.authorAvatar!)),
+                                  const SizedBox(width: 6),
+                                  Expanded(
+                                    child: Text(
+                                      item.authorName ?? item.caption,
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w600,
+                                        shadows: [Shadow(color: Colors.black54, blurRadius: 4)],
+                                      ),
+                                    ),
+                                  ),
+                                  Icon(liked ? Icons.favorite : Icons.favorite_border, color: liked ? Colors.red : Colors.white, size: 18),
+                                ],
                               ),
-                              Icon(liked ? Icons.favorite : Icons.favorite_border, color: liked ? Colors.red : Colors.white, size: 18),
                             ],
                           ),
                         ),

@@ -195,7 +195,7 @@ CGFloat rootWill(void) {
         self.userInteractionEnabled = YES;
         {
             //: self.leftwardMarqueeView = [[UUMarqueeView alloc] initWithFrame:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width - 54 - 30 - 10, 46) direction:EnumMarqueeViewDirectionLeftward];
-            self.leftwardMarqueeView = [[MarqueeView alloc] initWithRun:CGRectMake(54, 0, [UIScreen mainScreen].bounds.agreeLight.area - 54 - 30 - 10, 46) melt:EnumMarqueeViewDirectionLeftward];
+            self.leftwardMarqueeView = [[MarqueeView alloc] initWithRun:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width - 54 - 30 - 10, 46) melt:EnumMarqueeViewDirectionLeftward];
             //: _leftwardMarqueeView.delegate = self;
             _leftwardMarqueeView.delegate = self;
 	[self setStatus:_actionButton];
@@ -271,7 +271,7 @@ CGFloat rootWill(void) {
             //: CGRect frame = self.frame;
             CGRect frame = self.frame;
             //: frame.origin.y = SNStatusBarHeight();
-            frame.forbidLength.quick = tallnessMedia();
+            frame.origin.y = tallnessMedia();
             //: self.frame = frame;
             self.frame = frame;
         //: } completion:^(BOOL finished) {
@@ -337,7 +337,7 @@ CGFloat rootWill(void) {
     //: content.text = self.title;
     content.text = self.title;
     //: return (5.0f + 5.0f) + content.intrinsicContentSize.width; 
-    return (5.0f + 5.0f) + content.intrinsicContentSize.area; // icon width + label width (it's perfect to cache them all)
+    return (5.0f + 5.0f) + content.intrinsicContentSize.width; // icon width + label width (it's perfect to cache them all)
 }
 
 //: - (void)createItemView:(UIView*)itemView forMarqueeView:(UUMarqueeView*)marqueeView {
@@ -376,13 +376,13 @@ CGFloat rootWill(void) {
     //: SNLeadCompleteInfo *tipView = [[SNLeadCompleteInfo alloc] initWithFrame:(CGRect) {
     ClipView *tipView = [[ClipView alloc] initWithFrame:(CGRect) {
         //: .origin.x = 5,
-        .forbidLength.fade = 5,
+        .origin.x = 5,
         //: .origin.y = (44.0f + [UIDevice vg_statusBarHeight])+5,
-        .forbidLength.quick = (44.0f + [UIDevice key])+5,
+        .origin.y = (44.0f + [UIDevice key])+5,
         //: .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
-        .agreeLight.area = UIScreen.mainScreen.bounds.agreeLight.area-10.f,
+        .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
         //: .size.height = 46.f
-        .agreeLight.boundary = 46.f
+        .size.height = 46.f
     //: }];
     }];
 
@@ -448,7 +448,7 @@ CGFloat rootWill(void) {
     //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     //: return contentFitSize.height + 20.0f;
-    return contentFitSize.boundary + 20.0f;
+    return contentFitSize.height + 20.0f;
 }
 
 //: - (void)p_updateInTransaction:(void (^)(SNLeadCompleteInfo *tipView))transactionBlock
@@ -472,10 +472,10 @@ CGFloat rootWill(void) {
         //: CGRect frame = CGRectMake(0, 0, 30, 30);
         CGRect frame = CGRectMake(0, 0, 30, 30);
         //: frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
-        frame.forbidLength.fade = CGRectGetMaxX(self.bounds) - frame.agreeLight.area;
+        frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
 	[self setNoticeHearty:_completeType];
         //: frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
-        frame.forbidLength.quick = (self.bounds.agreeLight.boundary - frame.agreeLight.boundary) * 0.5;
+        frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
 
         //: _actionButton.frame = CGRectIntegral(frame);
         _actionButton.frame = CGRectIntegral(frame);
@@ -510,7 +510,7 @@ CGFloat rootWill(void) {
         //: CGRect frame = self.frame;
         CGRect frame = self.frame;
         //: frame.origin.y = SNStatusBarHeight() + 44 + 5;
-        frame.forbidLength.quick = tallnessMedia() + 44 + 5;
+        frame.origin.y = tallnessMedia() + 44 + 5;
         //: self.frame = frame;
         self.frame = frame;
     //: } completion:nil];

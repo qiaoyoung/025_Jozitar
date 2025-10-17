@@ -441,7 +441,8 @@ void colorLeaveDetect(CGContextRef c, color_t color) {
 }
 - (ecolor_t)flashTalkRed {
     //: OC_CUSTOM_PROPERTY_INJECT
-    ecolor_t flashTalkRed = objc_getAssociatedObject(self, layoutOuterSettings(nil));
+    NSNumber *number = objc_getAssociatedObject(self, layoutOuterSettings(nil));
+    ecolor_t flashTalkRed = number.doubleValue;
     return flashTalkRed;
 }
 
@@ -499,7 +500,7 @@ static const char *layoutOuterSettings (NSString *value) {
 
 - (void)setFlashTalkRed:(ecolor_t)flashTalkRed {
     //: OC_CUSTOM_PROPERTY_INJECT
-    objc_setAssociatedObject(self, layoutOuterSettings(nil), flashTalkRed, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, layoutOuterSettings(nil),@(flashTalkRed), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 //: +(instancetype) colorWithInt:(color_t)color floatAlpha:(CGFloat)alpha {

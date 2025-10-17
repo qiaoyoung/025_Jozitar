@@ -33,7 +33,6 @@
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 //: @implementation UIView (Additions)
 
-#import <objc/runtime.h>
 
 @implementation UIView (Joint)
 

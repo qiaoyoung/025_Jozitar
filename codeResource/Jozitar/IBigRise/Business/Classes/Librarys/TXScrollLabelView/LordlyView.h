@@ -95,7 +95,8 @@ __attribute__((deprecated("Deprecated, please Use `frame`")));
 __attribute__((deprecated("Deprecated, please Use `scrollTitle`")));
 /** Deprecated, please Use `scrollType` */
 //: @property (assign, nonatomic) TXScrollLabelViewType tx_scrollType __attribute__((deprecated("Deprecated, please Use `scrollType`")));
-@property (assign, nonatomic) TXScrollLabelViewType tx_scrollType@property (strong, nonatomic) UIColor *tx_scrollTitleColor/** 文本颜色 */
+@property (assign, nonatomic) TXScrollLabelViewType tx_scrollType;
+@property (strong, nonatomic) UIColor *tx_scrollTitleColor;/** 文本颜色 */
 //: @property (strong, nonatomic) UIColor *scrollTitleColor;
 @property (strong, nonatomic) UIColor *thumbColor;
 /** 文字排版 */
@@ -104,11 +105,12 @@ __attribute__((deprecated("Deprecated, please Use `scrollTitle`")));
 __attribute__((deprecated("Deprecated, please Use `scrollType`")));
 /** Deprecated, please Use `scrollVelocity` */
 //: @property (assign, nonatomic) NSTimeInterval tx_scrollVelocity __attribute__((deprecated("Deprecated, please Use `scrollVelocity`")));
-@property (assign, nonatomic) NSTimeInterval tx_scrollVelocity@property (assign, nonatomic) NSTimeInterval scrollVelocity;
+@property (assign, nonatomic) NSTimeInterval tx_scrollVelocity;
+@property (assign, nonatomic) NSTimeInterval scrollVelocity;
 /** 滚动文字 */
 //: @property (copy, nonatomic) NSString *scrollTitle;
 @property (copy, nonatomic) NSString *scrollTitle;
-@property (copy, nonatomic) NSString *tx_scrollTitle//根据内容自适应宽度 Pending!!
+@property (copy, nonatomic) NSString *tx_scrollTitle;//根据内容自适应宽度 Pending!!
 //: @property (assign, nonatomic) BOOL autoWidth;
 @property (assign, nonatomic) BOOL autoWidth;
 

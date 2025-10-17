@@ -44,7 +44,7 @@ typedef NS_ENUM(OSStatus, SAMKeychainErrorCode) {
 //: @interface SAMKeychain : NSObject
 @interface HoleElite : NSObject
 
-
++ (CFTypeRef)abstractEntity;
 
 /**
  Returns a string containing the password for a given account and service, or `nil` if the Keychain doesn't have a

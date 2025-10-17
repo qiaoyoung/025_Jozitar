@@ -713,7 +713,7 @@
 //: @property (nonatomic, strong) NSString *creatTeam;
 @property (nonatomic, strong) NSString *creatTeam;
 
-@property (nonatomic, strong) DownwardChartView *dropdownMenu//: @property (nonatomic,assign) BOOL supportsForceTouch;
+@property (nonatomic, strong) DownwardChartView *dropdownMenu;//: @property (nonatomic,assign) BOOL supportsForceTouch;
 @property (nonatomic,assign) BOOL supportsForceTouch;
 
 //: @property (nonatomic, strong) ZMONPrivacyPolicyView *policyView;

@@ -481,7 +481,7 @@ Byte kMiddleKey[] = {40, 27, 68, 5, 252, 163, 80, 111, 164, 107, 115, 162, 68, 7
 //: #import "ZMONReportHisView.h"
 #import "RoperView.h"
 //: #import "AppdelegateManager.h"
-#import "AppdelegateManager.h"
+#import "TaskHoleDecisionMakerAgree.h"
 
 //: @import MobileCoreServices;
 @import MobileCoreServices;
@@ -854,7 +854,7 @@ RemainAreaAgree>
             //: if (selector && [self respondsToSelector:selector]) {
             if (selector && [self respondsToSelector:selector]) {
                 //: SuppressPerformSelectorLeakWarning([self performSelector:selector withObject:message]);
-                SuppressPerformSelectorLeakWarning([self performSelector:selector withObject:message]);
+                [self performSelector:selector withObject:message];
                 //: handled = YES;
                 handled = YES;
             }

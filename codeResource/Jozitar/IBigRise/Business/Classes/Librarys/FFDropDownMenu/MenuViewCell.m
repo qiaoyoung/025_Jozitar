@@ -83,7 +83,7 @@ RefugeData viewWayTitle = (RefugeData){64, (Byte []){166, 194, 232, 164, 252, 22
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setMenuModel:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: FFDropDownMenuModel *realMenuModel = (FFDropDownMenuModel *)menuModel;
     MagicMarkerBasedModel *realMenuModel = (MagicMarkerBasedModel *)menuModel;

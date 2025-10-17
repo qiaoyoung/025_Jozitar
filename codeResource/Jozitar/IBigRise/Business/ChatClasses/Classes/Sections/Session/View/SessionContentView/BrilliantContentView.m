@@ -82,8 +82,8 @@ typedef struct {
 #import "UIViewNimKit.h"
 //: #import "ZZZLoadProgressView.h"
 #import "VoiceView.h"
-//: #import "ZZZKitDependency.h"
-#import "ZZZKitDependency.h"
+//: #import "BrandBeggarMyNeighborPolicyRecordNameView.h"
+#import "BrandBeggarMyNeighborPolicyRecordNameView.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "UCZProgressView.h"

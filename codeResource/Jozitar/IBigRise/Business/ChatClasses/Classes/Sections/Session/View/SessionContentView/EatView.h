@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "ZZZSessionMessageContentView.h"
 #import "ProudControl.h"
-//: #import "ZZZKitDependency.h"
-#import "ZZZKitDependency.h"
+//: #import "BrandBeggarMyNeighborPolicyRecordNameView.h"
+#import "BrandBeggarMyNeighborPolicyRecordNameView.h"
 
 //: @interface ZZZSessionNetChatNotifyContentView : ZZZSessionMessageContentView
 @interface EatView : ProudControl

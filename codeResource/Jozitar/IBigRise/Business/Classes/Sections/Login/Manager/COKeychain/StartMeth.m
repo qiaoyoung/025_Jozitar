@@ -323,7 +323,7 @@ typedef struct {
  [query setObject:(__bridge id)kSecMatchLimitAll forKey:(__bridge id)kSecMatchLimit];
 
  //: CFTypeRef accessibilityType = [SAMKeychain accessibilityType];
- CFTypeRef accessibilityType = [HoleElite accessibilityType];
+ CFTypeRef accessibilityType = [HoleElite abstractEntity];
  //: if (accessibilityType) {
  if (accessibilityType) {
   //: [query setObject:(__bridge id)accessibilityType forKey:(__bridge id)kSecAttrAccessible];
@@ -412,7 +412,7 @@ typedef struct {
   [query setObject:self.passwordData forKey:(__bridge id)kSecValueData];
 
   //: CFTypeRef accessibilityType = [SAMKeychain accessibilityType];
-  CFTypeRef accessibilityType = [HoleElite accessibilityType];
+  CFTypeRef accessibilityType = [HoleElite abstractEntity];
   //: if (accessibilityType) {
   if (accessibilityType) {
    //: [query setObject:(__bridge id)accessibilityType forKey:(__bridge id)kSecAttrAccessible];
@@ -435,7 +435,7 @@ typedef struct {
   [query setObject:self.passwordData forKey:(__bridge id)kSecValueData];
 
   //: CFTypeRef accessibilityType = [SAMKeychain accessibilityType];
-  CFTypeRef accessibilityType = [HoleElite accessibilityType];
+  CFTypeRef accessibilityType = [HoleElite abstractEntity];
   //: if (accessibilityType) {
   if (accessibilityType) {
    //: [query setObject:(__bridge id)accessibilityType forKey:(__bridge id)kSecAttrAccessible];

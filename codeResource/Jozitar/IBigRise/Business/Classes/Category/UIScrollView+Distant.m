@@ -500,7 +500,7 @@ static char featureInvitationEvent;
         case EnumPullToRefreshPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.scrollView.contentOffset.headGiven) < 1.19209290e-7F)) {
+            if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -517,11 +517,11 @@ static char featureInvitationEvent;
         case EnumPullToRefreshPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.scrollView.contentOffset.headGiven) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
+            if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.scrollView.contentOffset.headGiven) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.headGiven = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.wasTriggeredByUser = NO;
 	[self setActivity:_indicatorImage];
@@ -579,7 +579,7 @@ static char featureInvitationEvent;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.headGiven, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {
@@ -872,7 +872,7 @@ static char featureInvitationEvent;
             //: case EnumPullToRefreshPositionTop:
             case EnumPullToRefreshPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.headGiven - self.originalTopInset;
+                scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
                 //: break;
                 break;
             //: case EnumPullToRefreshPositionBottom:
@@ -888,19 +888,19 @@ static char featureInvitationEvent;
             //: self.state = EnumPullToRefreshStateLoading;
             self.state = EnumPullToRefreshStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionTop)
-        else if(contentOffset.headGiven < scrollOffsetThreshold && self.scrollView.isDragging && self.state == EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionTop)
             //: self.state = EnumPullToRefreshStateTriggered;
             self.state = EnumPullToRefreshStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionTop)
-        else if(contentOffset.headGiven >= scrollOffsetThreshold && self.state != EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.state != EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionTop)
             //: self.state = EnumPullToRefreshStateStopped;
             self.state = EnumPullToRefreshStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionBottom)
-        else if(contentOffset.headGiven > scrollOffsetThreshold && self.scrollView.isDragging && self.state == EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionBottom)
             //: self.state = EnumPullToRefreshStateTriggered;
             self.state = EnumPullToRefreshStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionBottom)
-        else if(contentOffset.headGiven <= scrollOffsetThreshold && self.state != EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.state != EnumPullToRefreshStateStopped && self.position == EnumPullToRefreshPositionBottom)
             //: self.state = EnumPullToRefreshStateStopped;
             self.state = EnumPullToRefreshStateStopped;
     //: } else {
@@ -914,7 +914,7 @@ static char featureInvitationEvent;
             //: case EnumPullToRefreshPositionTop:
             case EnumPullToRefreshPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.scrollView.contentOffset.headGiven * -1) > (0.0f) ? (self.scrollView.contentOffset.headGiven * -1) : (0.0f));
+                offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;
@@ -1178,7 +1178,7 @@ static char featureInvitationEvent;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)loading {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.scrollView.contentOffset.headGiven * -1) > (0) ? (self.scrollView.contentOffset.headGiven * -1) : (0));
+    CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.scrollView.contentInset;
     //: switch (self.position) {

@@ -18,7 +18,7 @@
 @implementation NSObject (Metalworks)
 
 //: - (void)setTyl_internalIdentifier:(NSString *)tyl_internalIdentifier{
-- (void)setTyl_internalIdentifier:(NSString *)Metalworks{
+- (void)setMetalworks:(NSString *)Metalworks {
     //: objc_setAssociatedObject(self, @selector(tyl_internalIdentifier), tyl_internalIdentifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(Metalworks), Metalworks, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

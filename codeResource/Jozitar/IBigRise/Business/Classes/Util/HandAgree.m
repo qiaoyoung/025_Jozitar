@@ -41,7 +41,7 @@ static void extendTrafficCompletion(SystemSoundID soundID, void *data)
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString(StringFromContributorData(screenTrunkConfig));
         //: SuppressPerformSelectorLeakWarning([(NTESAVNotifier *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(HandAgree *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        [(HandAgree *)notifier performSelector:selector withObject:nil afterDelay:1.0];
     }
 }
 

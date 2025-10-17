@@ -301,7 +301,7 @@ ReciprocationDelegate> {
 //: @property (nonatomic,strong) UIButton *btnCreatgroup;
 @property (nonatomic,strong) UIButton *btnCreatgroup;
 
-@property (nonatomic, strong) DownwardChartView *dropdownMenu//: @property (nonatomic, strong) DramInfoView *loadingView;
+@property (nonatomic, strong) DownwardChartView *dropdownMenu;//: @property (nonatomic, strong) DramInfoView *loadingView;
 @property (nonatomic, strong) DramInfoView *loadingView;
 
 //: @end
@@ -663,7 +663,7 @@ ReciprocationDelegate> {
 }
 
 //: - (void)sliderButtonClick:(UIButton *)sender
-- (void)alreadied:(UIButton *)sender
+- (void)sliderButtonClick:(UIButton *)sender
 {
     //: sender.selected = YES;
     sender.selected = YES;
@@ -1405,7 +1405,7 @@ ReciprocationDelegate> {
             //: SEL sel = NSSelectorFromString([contactItem selName]);
             SEL sel = NSSelectorFromString([contactItem dropAccept]);
             //: SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
-            SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
+            [self performSelector:sel withObject:nil];
         }
         //: else if (contactItem.vcName.length) {
         else if (contactItem.flipYear.length) {
@@ -1520,7 +1520,7 @@ ReciprocationDelegate> {
     //: [_btnfriend setTitle:[NTESLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[TaskWritten division:StringFromSchoolBoardData(widgetListenerError)] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [_btnfriend addTarget:self action:@selector(alreadied:) forControlEvents:UIControlEventTouchUpInside];
+    [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     //: [topview addSubview:_btnfriend];
     [topview addSubview:_btnfriend];
 //    [_btnfriend sizeToFit];
@@ -1541,7 +1541,7 @@ ReciprocationDelegate> {
     //: [_btngroup setTitle:[NTESLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[TaskWritten division:StringFromSchoolBoardData(kRainPreference)] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [_btngroup addTarget:self action:@selector(alreadied:) forControlEvents:UIControlEventTouchUpInside];
+    [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     //: [topview addSubview:_btngroup];
     [topview addSubview:_btngroup];
 //    [_btngroup sizeToFit];
